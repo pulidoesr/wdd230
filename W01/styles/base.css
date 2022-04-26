@@ -19,6 +19,6 @@ header, footer {
   padding: .5rem;
   background-color: #eee;
   display: grid;
-  grid-template-columns: 200px 1fr;
-  align-items: center;
+  grid-template-columns: 1fr;
+  text-align: center;
 }
