@@ -33,13 +33,12 @@
   </ul>
 </main>
 <footer>
-  <p>
-    &copy; 2022 Newbugh | Indiana | Last Update: <span id="currentdate"></span>
-  </p>
-</footer>
+  <p> &copy; 2022 Newbugh | Indiana </p>
+  <p> Last Modified: <span id="lastmodified"></span></p>
+ </footer>
 <script>  
-   var today = new Date().toLocaleDateString('en-US');
-   document.getElementById('currentdate').textContent = today;
+  let oLastModif = new Date(document.lastModified);
+  document.getElementById('lastmodified').textContent = oLastModif;
 </script>
 </body>
 </html>
