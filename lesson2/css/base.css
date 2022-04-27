@@ -33,9 +33,6 @@ main section:nth-child(2) {
 	margin: 0.5rem;
 }
 
-.colimage {
-	box-shadow: 0 0 30px #333;
-}
 
 /* Tablet Views ******************************/
 @media only screen and (min-width: 37.5em) {

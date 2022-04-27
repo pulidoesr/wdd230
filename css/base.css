@@ -1,0 +1,29 @@
+body {
+	font-size: 16px;
+	font-family: "Sansita", Ubuntu, sans-serif;
+}
+img {
+  width: auto;
+  height: auto;
+}
+
+/* Desktop Views ****************************/
+@media only screen and (min-width: 60em) {
+	main {
+		grid-template-columns: 1fr;
+	}
+
+	main {
+		grid-column: span 1;
+    align-content: center;
+	}
+}
+header, footer {
+  margin: 1rem auto;
+  border: 1px solid #bbb;
+  padding: .5rem;
+  background-color: #eee;
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+}
