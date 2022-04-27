@@ -6,6 +6,7 @@ img {
   width: 100%;
   height: auto;
 }
+
 /* phone or baseline views **************************/
 main {
 	max-width: 767px;
@@ -15,8 +16,9 @@ main {
 	font-size: 0.8rem;
 }
 
-main section h2 {
+main section h3 {
 	color: #536878;
+  text-align: center;
 }
 
 main section {
