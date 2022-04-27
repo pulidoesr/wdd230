@@ -7,6 +7,10 @@ img {
   height: auto;
 }
 
+h1, h2, h3, p {
+  font-family: 'Roboto', 'Open Sans', sans-serif;
+  text-align: center;
+}
 /* phone or baseline views **************************/
 main {
 	max-width: 767px;

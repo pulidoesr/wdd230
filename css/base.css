@@ -1,6 +1,6 @@
 body {
 	font-size: 16px;
-	font-family: "Sansita", Ubuntu, sans-serif;
+  font-family: 'Roboto', 'Open Sans', sans-serif;
 }
 
 main {
@@ -20,6 +20,7 @@ ul {
 }
 
 h1, h2, h3, p {
+  font-family: 'Roboto', 'Open Sans', sans-serif;
   text-align: center;
 }
 /* Desktop Views ****************************/
