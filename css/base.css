@@ -2,16 +2,24 @@ body {
 	font-size: 16px;
 	font-family: "Sansita", Ubuntu, sans-serif;
 }
+
+main {
+  grid-column: span 1;
+  align-content: center;
+  align-items: center;
+}
+
 img {
   width: auto;
   height: auto;
 }
+
 ul {
   display: table;
   margin: 0 auto;
 }
 
-h1, h2, h3 {
+h1, h2, h3, p {
   text-align: center;
 }
 /* Desktop Views ****************************/
