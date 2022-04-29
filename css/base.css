@@ -24,7 +24,7 @@ h1, h2, h3, p {
   text-align: center;
 }
 /* Desktop Views ****************************/
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 32.5em) {
 	main {
 		grid-template-columns: 1fr;
 	}

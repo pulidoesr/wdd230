@@ -1,4 +1,4 @@
-const select = document.querySelector('select');
+const select = document.querySelector('weather');
 const para = document.querySelector('p');
 
 select.addEventListener('change', setWeather);

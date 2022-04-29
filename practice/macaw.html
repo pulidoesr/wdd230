@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Macaw Tabs -->
+<!-- Macaw Tabs Reset is Optional -->
+<link rel="stylesheet" href="./dist/css/macaw-elegant-tabs-reset.css" type="text/css" media="all" />
+<!-- Icon Fonts -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+<!-- Macaw Tabs Theme -->
+<link rel="stylesheet" href="./dist/css/macaw-elegant-tabs.css" type="text/css" media="all" />
+<body>
+<div class="macaw-tabs macaw-elegant-tabs">
+  <div role="tablist" aria-label="Resources">
+    <button role="tab" aria-selected="true" aria-controls="blog-tab" id="blog"><span class="material-icons icon">assignment</span> <span class="label">Blog</span></button>
+    <button role="tab" aria-selected="false" aria-controls="events-tab" id="events" tabindex="-1"><span class="material-icons icon">settings</span> <span class="label">Events</span></button>
+    ....
+    ....
+  </div>
+
+  <div tabindex="0" role="tabpanel" aria-labelledby="blog" id="blog-tab">
+    <p>Vestibulum vitae feugiat quam, eget porttitor lacus.</p>
+    <p>Cras volutpat diam quis odio cursus accumsan.</p>
+  </div>
+  <div tabindex="0" role="tabpanel" aria-labelledby="events" id="events-tab" hidden>
+    <p>Nullam est ipsum, vestibulum non ullamcorper vitae.</p>
+    <p>Class aptent taciti sociosqu ad litora torquent.</p>
+  </div>
+  ....
+  ....
+</div>
+</body>
+<!-- jQuery Library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- Macaw Tabs Plugin -->
+<script src="./dist/js/macaw-tabs.js"></script>
+<!-- Macaw Tabs Initialization -->
+<script>
+  ( function ( $ ) {
+    // Document Ready
+    $( function () {
+      $( '.macaw-tabs' ).macawTabs();
+    } );
+  } )( jQuery );
+  // Default Settings
+const defaults = {
+  tabPanelAutoActivation: false,
+  tabPanelTransitionLogic: true,
+  tabPanelTransitionClass: 'active',
+  tabPanelTransitionTimeout: 0,
+  tabPanelTransitionTimeoutDuration: 50,
+  autoVerticalOrientation: true,
+  autoVerticalOrientationMaxWidth: '575px',
+  onTabActivation() {},
+};
+</script>
+</html>
