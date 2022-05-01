@@ -1,5 +1,22 @@
 /* Desktop Views ****************************/
 @media only screen and (min-width: 32.5em) {
+	h1 {
+		font-size: 1.5rem;
+	}
+
+	h2{
+		font-size: 1rem;
+	}
+
+	header img {
+		box-shadow: 0 0 30px #bbb; 
+		float: center;
+		border-radius: 0 10px 0 0;
+	}
+	
+	header, footer {
+		border-radius: 10px; 
+	}
 	main {
 		grid-template-columns: 1fr;
 	}
