@@ -6,11 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" href = "css/base.css" >
-  <title>Southwest Indiana Chamber</title>
+  <title>Evansville Chamber of Commerce</title>
 </head>
 <body>
   <header>
-    <h1>Southwest Indiana Chamber</h1>
+    <h1>Evansville Chamber of Commerce</h1>
   </header>
   <nav>
     <ul>
@@ -44,4 +44,8 @@
     <p> | Last Modified: <span id="lastmodified"></span></p>
   </footer>
 </body>
+<script>  
+  let oLastModif = new Date(document.lastModified);
+  document.getElementById('lastmodified').textContent = oLastModif;
+</script>
 </html>
