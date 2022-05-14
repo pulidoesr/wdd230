@@ -1,0 +1,25 @@
+body {
+  width: 500px;
+  margin: 0 auto;
+}
+
+p {
+    background-color: rgb(207,232,220);
+    border: 2px solid rgb(79,185,227);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.positioned {
+  position: relative;
+  background: rgba(255,84,104,.3);
+  border: 2px solid rgb(246, 40, 40);
+  top: 30px;
+  left: 30px;
+}
+
+.positioned {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
