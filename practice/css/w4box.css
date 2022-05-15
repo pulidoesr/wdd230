@@ -1,0 +1,23 @@
+
+
+.simple {
+  width: 560px;
+  margin: 20px auto;
+  border-width: thick;
+  border-style: solid;
+  border-color: aqua;
+ /* -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box; */
+}
+
+.fancy {
+  width: 560px;
+  margin: 20px auto;
+  padding: 50px; 
+  border-style: solid;
+  border-color: blue;
+/*  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box; */
+}
