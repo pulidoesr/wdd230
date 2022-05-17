@@ -1,7 +1,60 @@
 /* 64em is also 1028px when basefont is 16px */
 @media only screen and (min-width:64rem) {
 
+ 
+
+  h1 {
+    margin-left: 2rem;
+    }
+  
   nav ul li a{
+    border: none;
     padding: .5rem 1rem;
   }
+
+  nav button {display: none;}
+
+  nav ul#primaryNav {
+    display: flex;
+    margin-left: 2vw;
+    
+  }
+
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+ .hero {
+      height: auto;
+      grid-column: 2/4;
+      grid-row: 1/3;
+      flex-direction: column;
+  }
+
+  .event {
+    grid-column: 1/2;
+    grid-row: 1/2;}
+  
+  .weather {
+    grid-column: 1/2;
+    grid-row: 2/3;}
+  
+  .join {
+      grid-column: 1/2;
+      grid-row: 3/4;}
+
+  .newsrelease {
+    grid-column: 2/4;
+    grid-row: 3/4;}
+    
+  .ph-spotlight {
+    grid-row: 1/4;
+    grid-column: 4/5;
+    display: flex;
+    flex-direction: column;
+    }
+
+
 } /* end large */
