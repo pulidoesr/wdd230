@@ -136,6 +136,13 @@ aside {
     
 }
 
+.sl3 {
+  margin: 5px;
+  border: solid 1px rgb(255, 0, 0);
+  padding: 10px;
+  height: 50%;
+  line-height: 30px;
+}
 footer {
   font-size: 0.85rem;
   padding: 20px;
