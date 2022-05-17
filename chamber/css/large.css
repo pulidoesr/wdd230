@@ -1,7 +1,10 @@
 /* 64em is also 1028px when basefont is 16px */
 @media only screen and (min-width:64rem) {
 
- 
+  html, body {
+    height: 100vh;
+    width: 100vw;
+  }
 
   h1 {
     margin-left: 2rem;
@@ -23,7 +26,7 @@
 main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
   }
 
  .hero {
