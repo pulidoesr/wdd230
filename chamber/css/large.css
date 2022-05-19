@@ -1,9 +1,10 @@
 /* 64em is also 1028px when basefont is 16px */
-@media only screen and (min-width:64rem) {
+@media only screen and (min-width:60rem) {
 
   html, body {
     height: 100vh;
     width: 100vw;
+    font-size: 18px;
   }
 
   h1 {
