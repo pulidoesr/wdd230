@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    // run this function when the document is loaded
+    window.onload = function() {
+
+      // create a couple of elements in an otherwise empty HTML page
+      const heading = document.createElement("h1");
+      const heading_text = document.createTextNode("Big Head!\n");
+      heading.appendChild(heading_text);
+      document.body.appendChild(heading);
+      const heading2 = document.createElement("h2");
+      const heading_text2 = document.createTextNode("Small Head!");
+      heading.appendChild(heading_text2);
+      document.body.appendChild(heading2);
+   }
+ </script>
+</head>
+ <body>
+ </body>
+</html>
