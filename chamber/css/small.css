@@ -105,6 +105,29 @@ aside {
   grid-column: 1 / 4
 }
 
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.hero {
+  position: relative;
+}
+.hero_text {
+  position: absolute;
+  color:crimson;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.hero_join {
+  position: absolute;
+  top: 8rem; right: 2rem;
+  font-size: 1rem;
+  background-color: green;
+  border-radius: 1em;
+}
 .ph-item {
   border: 1px solid gray;
   color: gray;

@@ -1,5 +1,5 @@
 /* 64em is also 1028px when basefont is 16px */
-@media only screen and (min-width:60rem) {
+@media only screen and (min-width:64rem) {
 
   html, body {
     height: 100vh;
@@ -29,6 +29,11 @@ main {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
   }
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
 
  .hero {
       height: auto;
@@ -36,7 +41,11 @@ main {
       grid-row: 1/3;
       flex-direction: column;
   }
-
+  .hero_join {
+    top: 12rem; right: 2rem;
+    font-size: 2rem;
+    border-radius: 2em;
+  }
   .event {
     grid-column: 1/2;
     grid-row: 1/2;}
