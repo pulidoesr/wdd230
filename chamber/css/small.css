@@ -135,7 +135,25 @@ img {
   margin: 10px;
   padding: 1rem;
   }
-  
+.event {
+  background-color: rgb(6, 95, 183);
+}
+h3 {
+  color:yellow;
+  text-align: center;
+}
+
+.event_image {
+  display: block;
+  color:#eee;
+  text-align: center;
+
+}
+
+p {
+  text-align: center;
+  color: #eee;
+}
 .ph-spotlight {
     margin: 10px;
     border: 1px solid gray;
