@@ -79,7 +79,7 @@ nav ul li.active a {
 }
 
 nav ul li a:hover {
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(251, 246, 246, 0.3);
 }
 
 nav ul {display:none; padding:0;}
@@ -125,7 +125,7 @@ img {
   position: absolute;
   top: 8rem; right: 2rem;
   font-size: 1rem;
-  background-color: green;
+  background-color: rgb(71, 178, 71);
   border-radius: 1em;
 }
 .ph-item {
