@@ -131,7 +131,6 @@ img {
   border: 1px solid gray;
   color: gray;
   height: 100%;
-  margin: 10px;
   padding: 1rem;
   }
 
@@ -219,7 +218,6 @@ p {
     grid-row:5/6;
     grid-column: 1/1;
 }
-
 .sl3 {
   border: solid 1px rgb(255, 0, 0);
   padding: 5px;
@@ -227,6 +225,7 @@ p {
   grid-row:7/8;
   grid-column: 1/1;
 }
+
 footer {
   margin: 10px;
   font-size: 0.85rem;
