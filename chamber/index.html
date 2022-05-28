@@ -81,11 +81,11 @@
       <h3 class="weather_text">Weather</h3>
       <picture class="weather_image">
         <img src="images/cloudy.webp" alt="diamond" style="width:50px;height:55px" >
-      </picture>
-      <p class="weather_temperature">33 °C </p>
+      </picture>   
+      <p class="weather_temperature"> <span id="t">33</span>°C</p>
       <p class="weather_look"> Partly Cloudy</p>
-      <p class="weather_wind_speed">Wind Speed: 2.5 Km/h</p>
-      <p class="weather_wind_chill">Wind Chill: N/A</p>
+      <p class="weather_wind_speed">Wind Speed: <span id="s">5.5</span>Km/h</p>
+      <p class="weather_wind_chill" id="wind_chill">Wind Chill: <span id="f"></span></p>
     </div>
     <div class="ph-item newsrelease">
       <h3 class="newsrelease_text">News Release</h3>
@@ -131,5 +131,6 @@
     <p> | Last Modified: <span id="lastmodified"></span></p>
    </footer>
    <script src="js/scripts.js"></script>
+   <script src="js/windchill.js"></script>
 </body>
 </html>
