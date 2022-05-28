@@ -6,9 +6,10 @@ const newElement = document.createElement("f"); // windchill new
 let f = 0 // wind chill factor
 let t = parseFloat(temperature.innerText)
 let s = parseFloat(speed.innerText)
-let temp = parent.parentNode;
 let string = ""
-s = s * 0.621371; // speed from km. to miles
+// speed from km. to miles
+s = s * 0.621371; 
+// calculation of wind chill
 if (t <= 50 && s > 3) {
       f = 35.74 + 0.6215*t  -35.75*s**0.16  + 0.4275*t*s**0.16;
       f = f.toFixed(2);
@@ -17,6 +18,7 @@ if (t <= 50 && s > 3) {
 } else {
       newElement.innerHTML = "N/A";
 }
+// create or replace the wind chill value
 if (oldElement.hasChildNodes()) {
     parent.replaceChild(newElement, oldElement);
 } else {
