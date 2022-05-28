@@ -1,8 +1,8 @@
 const parent = document.getElementById("wind_chill"); // selecting parent
 const temperature = document.getElementById("t"); // temperature
 const speed = document.getElementById("s"); // wind speed
-const oldElement = document.getElementById("f"); // windchill old
-const newElement = document.createElement("f"); // windchill new
+const oldElement = document.getElementById("wc"); // windchill old
+const newElement = document.createElement("wc"); // windchill new
 let f = 0 // wind chill factor
 let t = parseFloat(temperature.innerText)
 let s = parseFloat(speed.innerText)
