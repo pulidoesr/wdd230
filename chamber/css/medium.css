@@ -1,10 +1,10 @@
 /* 35rem is also 560px when basefont is 16px */
 @media only screen and (min-width: 35rem) {
 
-  html, body {
+  /* html, body {
     height: 100vh;
     width: 100vw;
-  }
+  } */
 
   h1 {
     margin-left: 2rem;
@@ -13,18 +13,18 @@
   nav ul li a {
     border: none;
     border-right: 1px solid rgba(0,0,0,0.3);
+    color: black;
   }
 
   main {
       display: grid;
-     /* grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(4, 1fr); */
+      
     }
 
   .hero {
       grid-column: 1/5;
       grid-row: 1/2;
-      flex-direction: column;
+     /* flex-direction: column; */
   }
   .hero_text {
     font-size: 2.5rem;

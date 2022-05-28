@@ -3,10 +3,11 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 /*----------- apply a natural box layout model to all elements --------------*/
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+/*----------- HEADER --------------*/
 header {
   margin: 0 auto;
   padding: 5px 0;
-	background-color: rgb(144, 141, 141);
+  background-color: #47b247;
 	display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 	align-items: center;
@@ -19,61 +20,50 @@ header {
 	margin-left: 1rem;
   margin-right: 1rem;
 }
-
 .logo img {
 	width: 80px;
 	height: auto;
 }
-
-/*
-.headings {
-	display: flex;
-	flex-direction: column;
-	margin-left: .5rem;
-}
-*/
-
 .social {
   margin-left: .3rem;
 	margin-right: .3rem;
   align-items: right;
   align-content: right;
 }
-
 .social svg {
 	width: 25px;
 	height: auto;
 }
-
 .container {
   background: none;
 }
 
+/*----------- NAVIGATION --------------*/
 nav {
   background-color: transparent;
+  
 }
 nav button {
   margin: .2rem 2vw;
   border: none;
-  background: transparent;
   font-size: 2rem;
-  color: rgb(7, 7, 7);
 }
 nav ul {
   margin: 0;
   padding: 0;
-  list-style-type: none;   
+  list-style-type: none;  
+   
 }
 nav ul li a:hover {
   display: block;
-  background-color: rgba(12, 222, 208, 0.719);
+  background-color: rgb(244, 248, 248);
   text-decoration: none;
-  color: #fff;
+  
 }
 
 nav ul li.active a:hover {
-  background-color: rgba(12, 222, 208, 0.719);
-  color: #fff;
+  background-color: rgba(245, 248, 248, 0.719);
+ 
 }
 
 nav ul {display:none; padding:0;}
@@ -85,9 +75,19 @@ nav ul.open{display:block;}
 #hamburgerBtn.open span:nth-child(1) {display:none;}
 #hamburgerBtn.open span:nth-child(2) {display:block;}
 
+/*----------- BODY --------------*/
+body {
+  font-size: 16px;
+  font-family: Verdana, sans-serif;
+}
+
+/*----------- MAIN --------------*/
 h1 {
   font-size: 1rem;
-  margin: 0 2 vw;}
+  margin: 0 2 vw;
+  color: #070707;
+}
+
 
 aside {
 	margin: 0.5rem;
@@ -96,7 +96,8 @@ aside {
 	background-color: #eee;
   display: block;
   text-align: center;
-  grid-column: 1 / 4
+  grid-column: 1 / 4;
+  color: #070707;
 }
 
 img {
@@ -123,8 +124,7 @@ img {
 }
 .ph-item {
   border: 1px solid gray;
-  color: gray;
-  height: 100%;
+  color: rgb(251, 249, 249);
   padding: 1rem;
   }
 
@@ -138,11 +138,10 @@ h3 {
 }
 p {
   text-align: center;
-  color: #eee;
 }
 .event_image {
   display: block;
-  color:#eee;
+ 
   text-align: center;
 }
 .weather, .join, .ph-spotlight {
@@ -154,7 +153,7 @@ p {
   text-align:center;
 }
 .weather_image {
-  color:#eee;
+ 
   grid-row: 2/2;
   grid-column: 1/2;
   text-align: right;
@@ -180,7 +179,7 @@ p {
   text-align: center;
 }
 .join_image {
-  color:#eee;
+
   grid-row: 2/2;
   grid-column: 1/2;
   text-align: center;
@@ -219,15 +218,15 @@ p {
   grid-row:7/8;
   grid-column: 1/1;
 }
-
+/*----------- FOOTER --------------*/
 footer {
   margin: 10px;
   font-size: 0.85rem;
   padding: 20px;
   display: grid;
-  background-color: rgb(144, 141, 141);
+  background-color: #47b247;
   justify-content: center;
- 
+  color: #070707;
 }
 
 .foot_logo img {

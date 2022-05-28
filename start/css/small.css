@@ -17,8 +17,10 @@ header {
     padding: .5rem 2%;
     background-color: #ddd;
 }
+
 header h1 {margin: 0;}
 header h2 {margin: 0; font-weight: normal;}
+header figure.logo {float: left; margin: 0 2% 0 0;}
 
 /*----------- NAVIGATION --------------*/
 nav {
@@ -58,7 +60,15 @@ main {
     padding: 0 2%;
     min-height: 10rem;
 }
+main figure.myphoto {
+    width: 50%;
+    /* border: 1px red dashed; this was used to see the bounderies of the figure then remove*/
+    margin: 0 0 0 2%; 
+    float: right;
+}
 
+main figure.myphoto img {width:100%;}
+main figure.myphoto figcaption {text-align: center; font-size: .7rem;}
 
 /*----------- FOOTER --------------*/
 footer {

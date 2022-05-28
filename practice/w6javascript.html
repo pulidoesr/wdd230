@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="parent">
+    <p>This is first child.</p>
+    </div>
+  <button onclick="addChild()">Add Child</button>
+  <button onclick="remove()">Remove Child</button>
+  <button onclick="replace()">Replace Child</button>
+  <button onclick="changeColor()">Change Color</button>
+  <div id="parent2">
+    <p id="mouseover">Mouse over here</p>
+  </div>
+  <script>
+    const parent = document.getElementById("parent"); // selecting parent
+    const element = document.getElementById("mouseover"); // element 
+    // Function addChild
+    function addChild() {
+      const child = document.createElement("p"); // creating child
+      child.innerHTML = "This is second child"; // adding some content
+      child.setAttribute("id", "secondChild");  // setting and attribute for the child creation
+  
+      // appending child to parent
+      parent.append(child);
+      // you can also use appendChild()
+    }
+    // Function remove
+    function remove() {
+      const child = document.getElementById("secondChild"); // selecting child
+      parent.removeChild(child);
+    }
+    // Function replace
+    function replace() {
+      const oldElement = document.getElementById("secondChild"); // selecting oldElement
+      const newElement = document.createElement("h2"); // creating newElement which is h2
+      newElement.innerHTML = "This is new element, old element replaced by this."
+      newElement.setAttribute("id", "secondChild")
+      parent.replaceChild(newElement, oldElement);
+    }
+      // Function changeColor
+    function changeColor() {
+      const element = document.getElementById("secondChild");
+      element.style.color = "red";
+    }
+    // adding event listener
+
+    element.addEventListener("mouseover", function() {
+      alert("Mouse is over the element.");
+      }); 
+  </script>
+</body>
+</html>
+
+
