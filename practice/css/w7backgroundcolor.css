@@ -1,0 +1,30 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+main {
+	margin: 0;
+	border: 1px solid #bbb;
+	padding: 0.5rem;
+	width: 400px;
+	background-color: #abe;
+	text-align: center;
+}
+
+label {
+	display: block;
+	margin: 0.5rem;
+	text-transform: capitalize;
+}
+
+p {
+	font-weight: 700;
+	text-transform: uppercase;
+}
