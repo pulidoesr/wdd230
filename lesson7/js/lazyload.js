@@ -46,3 +46,6 @@ faders.forEach(fader => {
 sliders.forEach(slider => {
   appearOnScroll.observe(slider);
 });
+
+let oLastModif = new Date(document.lastModified);
+  document.getElementById('lastmodified').textContent = oLastModif;

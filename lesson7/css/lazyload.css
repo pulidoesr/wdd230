@@ -1,3 +1,4 @@
+/*----------- MAIN --------------*/
 .more-stuff-grid {
   background: #f4f4f4;
   padding: 4em 0;
@@ -36,4 +37,20 @@
   -webkit-transform: translateX(0);
   transform: translateX(0);
   opacity: 1;
+}
+
+/*----------- FOOTER --------------*/
+footer {
+  margin: 10px;
+  font-size: 0.85rem;
+  padding: 20px;
+  display: grid;
+  background-color: #47b247;
+  justify-content: center;
+  color: #070707;
+}
+
+.foot_logo img {
+	width: 80px;
+	height: auto;
 }
