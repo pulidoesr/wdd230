@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href = "css/lazyload.css" >
+  <title>Lazyload </title>
+</head>
+<body>
+  <section class="home-intro">
+    <h1>Lazyloads based on Kevin Powel Model</h1>
+  </section>
+  <main>
+      <div class="more-stuff-grid">
+        <img
+          src="https://unsplash.it/400"
+          alt=""
+          class="slide-in from-left"
+        />
+        <p class="slide-in from-right">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit,
+          quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet
+          omnis sapiente neque cumque consequuntur reiciendis deserunt.
+          Dolorem vero exercitationem consequuntur, eligendi cupiditate
+          debitis facilis quibusdam magni. Eveniet.
+        </p>
+      </div>
+      <div class="more-stuff-grid">
+        <p class="slide-in from-left">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit,
+          quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet
+          omnis sapiente neque cumque consequuntur reiciendis deserunt.
+          Dolorem vero exercitationem consequuntur, eligendi cupiditate
+          debitis facilis quibusdam magni. Eveniet.
+        </p>
+        <img
+          src="https://unsplash.it/401"
+          alt=""
+          class="slide-in from-right"
+        />
+      </div>
+      <div class="more-stuff-grid">
+        <img
+          src="https://unsplash.it/400"
+          alt=""
+          class="slide-in from-left"
+        />
+        <p class="slide-in from-right">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit,
+          quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet
+          omnis sapiente neque cumque consequuntur reiciendis deserunt.
+          Dolorem vero exercitationem consequuntur, eligendi cupiditate
+          debitis facilis quibusdam magni. Eveniet.
+        </p>
+      </div>
+      <div class="more-stuff-grid">
+        <p class="slide-in from-left">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit,
+          quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet
+          omnis sapiente neque cumque consequuntur reiciendis deserunt.
+          Dolorem vero exercitationem consequuntur, eligendi cupiditate
+          debitis facilis quibusdam magni. Eveniet.
+        </p>
+        <img
+          src="https://unsplash.it/401"
+          alt=""
+          class="slide-in from-right"
+        />
+      </div>
+      <div class="more-stuff-grid">
+        <img
+          src="https://unsplash.it/400"
+          alt=""
+          class="slide-in from-left"
+        />
+        <p class="slide-in from-right">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit,
+          quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet
+          omnis sapiente neque cumque consequuntur reiciendis deserunt.
+          Dolorem vero exercitationem consequuntur, eligendi cupiditate
+          debitis facilis quibusdam magni. Eveniet.
+        </p>
+      </div>
+      <div class="more-stuff-grid">
+        <p class="slide-in from-left">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit,
+          quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet
+          omnis sapiente neque cumque consequuntur reiciendis deserunt.
+          Dolorem vero exercitationem consequuntur, eligendi cupiditate
+          debitis facilis quibusdam magni. Eveniet.
+        </p>
+        <img
+          src="https://unsplash.it/401"
+          alt=""
+          class="slide-in from-right"
+        />
+      </div>
+  </main>
+  <footer>
+    <p> &copy; Eduardo Pulido | 2022 | Newbugh Indiana </p>
+    <p> Last Modified: <span id="lastmodified"></span></p>
+  </footer>
+</body>
+<script src="js/lazyload.js"></script>
+<script> 
+  let oLastModif = new Date(document.lastModified);
+  document.getElementById('lastmodified').textContent = oLastModif;
+</script>
+</html>
