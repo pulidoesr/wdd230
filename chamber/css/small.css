@@ -133,6 +133,7 @@ img {
 h3 {
   color:yellow;
   text-align: center;
+  background-color:rgb(6, 95, 183); 
 }
 p {
   text-align: center;
@@ -249,6 +250,103 @@ footer {
 .foot_logo img {
 	width: 80px;
 	height: auto;
+}
+/*---------- Discover Page ----------*/
+.discover {
+  display: grid;
+  grid-template-columns: 1fr, 1fr, 1fr;
+}
+.discover_evansville {
+  display:flex;
+}
+.home-about {
+  padding: 4em 0;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.discover {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px
+}
+
+.discover div {
+  
+  border: 1px solid #32292f;
+  background-color: #ffffff;
+  box-shadow: 3px 3px 10px rgb(54, 54, 54);
+  padding: 10px;
+  
+}
+
+.discover-title {
+  padding: 30px 30px 0px 30px;
+  text-align: center;
+}
+
+.stats {
+  padding: 10px;
+  color: white;
+  background-color: #355f5f90;
+  border: 1px solid black;
+  box-shadow: 3px 3px 10px rgb(54, 54, 54);
+}
+
+.discover-title p {
+  padding: 20px 20px 10px 20px;
+}
+
+.discover p {
+  padding: 10px;
+}
+
+
+/*----------- BOXES BORDERS ---------------*/
+.box1, .box2, .box3, .box4, .box5, .box6, .box7, h2 {
+  padding: 5px 20px 10px 30px;
+  background-color: rgb(55, 148, 242);
+  border: transparent;
+  background-color: none;
+}
+.pic_demographics {
+  float: left;
+  padding: 0 20px 20px 0;
+ }
+.text_demographics {
+  object-fit: fill;
+}
+.box7 .border {
+  margin-bottom: 10px;
+}
+
+.box7 .bottom {
+  margin: 0px;
+}
+/*----------- Lazyload images ---------------*/
+.box7 img {
+  filter: blur(0em);
+  transition: filter 0.5s;
+}
+
+.pics {
+  border: 1px solid black;
+  transition: filter 0.5s;
+}
+
+.box7 p {
+  padding: 10px;
+}
+
+img[data-src] {
+  filter: blur(0.4em);
+}
+
+.box7 .photo-gal {
+  padding: 10px;
+  margin: 10px 10px 20px 10px;
+  text-align: center;
 }
 
 
