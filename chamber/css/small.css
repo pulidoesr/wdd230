@@ -304,7 +304,7 @@ footer {
 
 
 /*----------- BOXES BORDERS ---------------*/
-.box1, .box2, .box3, .box4, .box5, .box6, .box7, h2 {
+.box1, .box2, .box3, .box7, h2 {
   padding: 5px 20px 10px 30px;
   background-color: rgb(55, 148, 242);
   border: transparent;
