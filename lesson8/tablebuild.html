@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href = "css/tablebuild.css" >
+  <title>Tables</title>
+</head>
+<body>
+  <table>
+    <caption>Table 1: Week 8 homework </caption>
+    <thead>
+      <tr>
+        <th colspan="3" scope="colgroup">ACME Wildwest</th>
+      </tr>
+      <tr>
+        <th scope="col">Period</th>
+        <th scope="col">Sales</th>
+        <th scope="col">Sales Goal</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>August</td>
+        <td>$3,590</td>
+        <td>$4,000</td>
+      </tr>
+      <tr>
+        <td>September</td>
+        <td>$4,420</td>
+        <td>$5,000</td>
+      </tr>
+      <tr>
+        <td>October</td>
+        <td>$4,870</td>
+        <td>$5,000</td>
+      </tr>
+      <tr>
+        <td>November</td>
+        <td>$8,620</td>
+        <td class="highlight">$7,500</td>
+      </tr>
+      <tr>
+        <td scope="black">Black Friday</td>
+        <td colspan="2">$3,200</td>
+      </tr>
+      <tr>
+        <td>December</td>
+        <td>$6,820</td>
+        <td>$7,500</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3"> Compiled <span id="lastmodified"></span> by Eduardo Pulido</td>
+      </tr>
+    </tfoot>
+  </table>
+  <script>  
+    let oLastModif = new Date(document.lastModified);
+    document.getElementById('lastmodified').textContent = oLastModif;
+  </script>
+</body>
+</html>
