@@ -10,8 +10,6 @@
   font-family: 'Ubuntu', sans-serif;
 }
 
-
-
 table {
 	margin: 10px auto;
 	border: thin solid var(--border);
@@ -24,6 +22,10 @@ caption {
   caption-side: bottom;
 	color: var(--back);
 	font-size: .85rem;
+}
+
+thead .header {
+	color: var(--foredark);
 }
 
 th {
