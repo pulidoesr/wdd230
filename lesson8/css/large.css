@@ -1,0 +1,71 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width:64rem) {
+
+  html, body {
+    height: 100vh;
+    width: 100vw;
+    font-size: 18px;
+  }
+
+  h1 {
+    margin-left: 2rem;
+    }
+  
+  nav ul li a{
+    border: none;
+    padding: .5rem 1rem;
+    color:black;
+  }
+
+  nav button {display: none;}
+
+  nav ul#primaryNav {
+    display: flex;
+    margin-left: 2vw;
+    
+  }
+
+
+  img {
+    object-fit: fill;
+  }
+
+ .hero {
+      grid-column: 2/4;
+      grid-row: 1/3;
+      flex-direction: column;
+  }
+
+.hero_text {
+  top: 2rem;
+}
+  .hero_join {
+    top: 22rem; right: 2rem;
+    font-size: 2rem;
+    border-radius: 2em;
+  }
+  .event {
+    grid-column: 1/2;
+    grid-row: 1/2;}
+  
+  .weather {
+    grid-column: 1/2;
+    grid-row: 2/3;}
+  
+  .join {
+      grid-column: 1/2;
+      grid-row: 3/4;}
+
+  .newsrelease {
+    grid-column: 2/4;
+    grid-row: 3/4;}
+    
+  .spotlight {
+    grid-row: 1/4;
+    grid-column: 4/5;
+    display: flex;
+    flex-direction: column;
+    }
+
+
+} /* end large */
