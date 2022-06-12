@@ -119,6 +119,7 @@ img {
   font-size: 1rem;
   background-color: rgb(71, 178, 71);
   border-radius: 1em;
+  cursor: pointer;
 }
 .ph-item {
   border: 1px solid gray;
