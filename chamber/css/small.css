@@ -82,7 +82,7 @@ body {
 /*----------- MAIN --------------*/
 h1 {
   font-size: 1rem;
-  margin: 0 2 vw;
+  margin: 0 2vw;
   color: #070707;
 }
 
@@ -254,7 +254,7 @@ footer {
 /*---------- Discover Page ----------*/
 .discover {
   display: grid;
-  grid-template-columns: 1fr, 1fr, 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .discover_evansville {
   display:flex;
@@ -308,7 +308,7 @@ footer {
   padding: 5px 20px 10px 30px;
   background-color: rgb(55, 148, 242);
   border: transparent;
-  background-color: none;
+  
 }
 .pic_demographics {
   float: left;
@@ -348,6 +348,91 @@ img[data-src] {
   margin: 10px 10px 20px 10px;
   text-align: center;
 }
+/* ------- Join Page --------*/
+main {
+  padding: 0 2%;
+  min-height: 20rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: none;
+  grid-gap: 2%;
+}
+.membership {
+  margin: 2rem 0;
+  border: 1px solid #445ba9;
+  border-radius: 10px;
+  padding: .5rem 2%;
+}
+.mform {
+  margin: 2rem 0;
+  border: 1px solid #445ba9;
+  border-radius: 10px;
+  padding: .5rem 2%;
+}
+
+form fieldset {
+  margin: 2rem 0;
+  border: 1px solid #445ba9;
+  border-radius: 10px;
+  padding: .5rem 2%;
+}
+form legend {
+  color: #445ba9;
+  margin: 0 1rem;
+  padding: 0 .5rem;
+}
+form label.top, form div {
+  display: block;
+  padding-top: 1rem;
+  color: #9c2c13;
+  font-size: .8rem;
+}
+form label.top input, form label.top select {
+  -webkit-apperance:none;
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #999;
+  border-radius: 4px;
+  padding: .75rem;
+  color: #555;
+  width: 100%;
+  max-width: 20rem;
+  background-color: rgba(0,0,0,0.1);
+}
+form label.sbs {
+  display:block;
+  padding: .75rem 0;
+  color: #555;
+}
+form input.submitBtn {
+  border: none;
+  background-color: rgb(6, 95, 183);
+  color: white;
+  border-radius: 1rem;
+  padding: .75rem 1.5rem;
+  margin: 0 0 2rem 2%;
+  width: 96%;
+  max-width: 20rem;
+}
+form label.top input:required {
+  border-left: red solid 6px;
+}
+form label.top input:required:valid {
+  border-left: green solid 6px;
+}
+
+.thanks {
+  display: inline-block;
+  margin: 5rem 30rem ;
+  border: 1px solid #445ba9;
+  border-radius: 10px;
+  padding: 5rem 2%;
+ 
+}
+ .hthanks {
+  font-size: 1.5rem;
+  color:rgb(6, 95, 183);
+  text-align: center;
+ }
 
 
 
