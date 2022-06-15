@@ -15,7 +15,8 @@ h1 {
   color: #000;
   border-bottom: 1px solid #eee;
   text-shadow: 0 0 15px #999;
-  width: 60%;
+  width: auto;
+  text-align: center;
 }
 
 h2 {
@@ -40,7 +41,13 @@ main {
   margin-left: 2rem;
 }
 
+/*
 .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+*/
+div.cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
