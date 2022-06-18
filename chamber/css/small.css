@@ -434,7 +434,12 @@ form label.top input:required:valid {
   color:rgb(6, 95, 183);
   text-align: center;
  }
-/* ------- Join Page --------*/
+
+ textarea:focus {
+  background: pink;
+}
+
+/* ------- Directory Page --------*/
 .directory {
   margin: 2rem 0;
   border: 1px solid #445ba9;
