@@ -20,6 +20,27 @@
       "phone": "608-755-8100",
       "webpage": "www.nowlan.com",
       "logo": "nowlan-logo.png"
+    },
+    {
+      "name": "BMO Harris Bank",
+      "address": "25 N. Madison St. Evansville, WI 53536",
+      "phone": "608-882-6166",
+      "webpage": "BmoHarris.com",
+      "logo": "harris-blue-pride.svg"
+    },
+    {
+      "name": "First Community Bank",
+      "address": "202 Merchant Row Milton, WI 53563",
+      "phone": "608-868-7644",
+      "webpage": "fcbmilton.com",
+      "logo": "site-logo.png"
+    },
+    {
+      "name": "Greenwoods State Bank",
+      "address": "12 John Lindemann Dr Evansville, WI 53536",
+      "phone": "608-882-6010",
+      "webpage": "greenwoods.bank",
+      "logo": "greengoods.png"
     }
   ]
 }
