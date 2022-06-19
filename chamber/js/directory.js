@@ -18,9 +18,8 @@ function displayCompanies(company) {
   let logo = document.createElement('img');
   let address = document.createElement('p');
   let phone = document.createElement('p');
-  let webpage = document.createElement('p');
+  let webpage = document.createElement('a');
   
-
 // Change the textContent property of the h2 element to contain the prophet's full name
 h2.textContent = `${company.name}`;
 
@@ -31,7 +30,9 @@ webpage.textContent= `https://${company.webpage}`
 
 // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
 logo.setAttribute('src', `images/${company.logo}`);
-logo.setAttribute('style', `width:50px;height:55px`);
+logo.setAttribute('style', `width:180px;height:185px`);
+webpage.setAttribute('href', "url")
+
 
  // Add/append the section(card) with the h2 element
  card.appendChild(h2);
