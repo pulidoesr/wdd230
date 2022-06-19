@@ -41,6 +41,27 @@
       "phone": "608-882-6010",
       "webpage": "greenwoods.bank",
       "logo": "greengoods.png"
+    },
+    {
+      "name": "H&R Block",
+      "address": "809 West Main St. Suite 2 Stoughton, WI 53589",
+      "phone": "608-873-5300",
+      "webpage": "hrblock.com",
+      "logo": "hrb.webp"
+    },
+    {
+      "name": "Salon KB",
+      "address": "11 East Main Street Evansville, WI 53536",
+      "phone": "608-576-0542",
+      "webpage": "salonkb.com",
+      "logo": "salonkb.webp"
+    },
+    {
+      "name": "Stoughton Health",
+      "address": "900 Ridge St. Stoughton, WI 53589",
+      "phone": "608-873-6611",
+      "webpage": "stoughtonhealth.com",
+      "logo": "Stoughton-Health-logo.png"
     }
   ]
 }
