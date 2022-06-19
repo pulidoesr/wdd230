@@ -1,21 +1,21 @@
 {
   "companies": [
     {
-      "company": "ALCIVIA - Agronomy",
+      "name": "ALCIVIA - Agronomy",
       "address": "6631 Cty. M Evansville, WI 53536",
       "phone": "608-819-3202",
       "webpage": "alcivia.com",
       "logo": "alcivia.svg"
     },
     {
-      "company": "Chesterfield Boarding Kennel",
+      "name": "Chesterfield Boarding Kennel",
       "address": "5641 N. Old Hwy 92 Evansville, WI 53536",
       "phone": "608-882-6197",
       "webpage": "chesterfieldkennel.com",
       "logo": "Word-dog-logo-1.png"
     },
     {
-      "company": "Nowlan Law LLP",
+      "name": "Nowlan Law LLP",
       "address": "100 S Main Street Janesville, WI 53545",
       "phone": "608-755-8100",
       "webpage": "www.nowlan.com",

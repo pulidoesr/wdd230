@@ -8,8 +8,6 @@ fetch(requestURL)
   })
   .then(function (jsonObject) { 
     console.table(jsonObject);  // temporary checking for valid response and data parsing
-    let message = `Welcome back! You last visited on <strong> demo </strong>.`;
-    console.log(message);
     const prophets = jsonObject['prophets'];
     prophets.forEach(displayProphets);
   });
