@@ -483,7 +483,6 @@ section > p {
 }
 
 .grid section {
-	flex-direction: column;
 	text-align: center;
 }
 
