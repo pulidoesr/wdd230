@@ -4,7 +4,7 @@
   html, body {
     height: 100vh;
     width: 100vw;
-    font-size: 18px;
+   /* font-size: 18px; */
   }
 
   h1 {
@@ -60,11 +60,7 @@
     grid-column: 2/4;
     grid-row: 3/4;}
     
-  .spotlight {
-    grid-row: 1/4;
-    grid-column: 4/5;
-    
-    }
+
 
 
 } /* end large */

@@ -75,7 +75,6 @@ nav ul.open{display:block;}
 
 /*----------- BODY --------------*/
 body {
-  font-size: 16px;
   font-family: Verdana, sans-serif;
 }
 
@@ -122,14 +121,11 @@ img {
   cursor: pointer;
 }
 .ph-item {
+  background-color: rgb(6, 95, 183);
   border: 1px solid gray;
   color: rgb(251, 249, 249);
   padding: 1rem;
   }
-
-.ph-item {
-  background-color: rgb(6, 95, 183);
-}
 
 h3 {
   color:yellow;
@@ -140,7 +136,7 @@ p {
   text-align: center;
 }
 
-.weather, .event, .ph-spotlight {
+.weather, .event, .pjoin, .ph-spotlight {
   display: grid;
 }
 .event_image {
@@ -307,7 +303,7 @@ footer {
 /*----------- BOXES BORDERS ---------------*/
 .box1, .box2, .box3, .box7, h2 {
   padding: 5px 20px 10px 30px;
-  background-color: rgb(55, 148, 242);
+  /*background-color: rgb(55, 148, 242);*/
   border: transparent;
   
 }
@@ -352,7 +348,7 @@ img[data-src] {
 /* ------- Join Page --------*/
 main {
   display: grid;
-  grid-template-columns: auto;
+  /* grid-template-columns: auto; */
 }
 .membership {
   margin: 2rem 0;
