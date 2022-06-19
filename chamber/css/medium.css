@@ -45,7 +45,6 @@
   .spotlight {
     grid-column: 3/5;
     grid-row: 3/4;
-    display: flex;
     flex-direction: column;
       }  
   
@@ -56,5 +55,11 @@
   .weather {
     grid-column: 3/5;
     grid-row: 4/5;}
+
+/* Join Page */
+.join {
+  grid-template-columns: 1fr 1fr;
+  background-color: white;
+}
   
   } /* end medium */

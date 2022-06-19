@@ -127,7 +127,7 @@ img {
   padding: 1rem;
   }
 
-.event, .weather, .newsrelease, .join, .spotlight {
+.ph-item {
   background-color: rgb(6, 95, 183);
 }
 
@@ -140,7 +140,7 @@ p {
   text-align: center;
 }
 
-.weather, .event, .join, .ph-spotlight {
+.weather, .event, .ph-spotlight {
   display: grid;
 }
 .event_image {
@@ -351,11 +351,8 @@ img[data-src] {
 }
 /* ------- Join Page --------*/
 main {
-  padding: 0 2%;
-  min-height: 20rem;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: none;
-  grid-gap: 2%;
+  display: grid;
+  grid-template-columns: auto;
 }
 .membership {
   margin: 2rem 0;
@@ -440,6 +437,19 @@ form label.top input:required:valid {
 }
 
 /* ------- Directory Page --------*/
+
+.menu {
+	margin: 1rem auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: #bbb;
+	text-align: center;
+}
+
+.menu button {
+	padding: 1rem;
+}
+
 div.cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -457,6 +467,40 @@ section > p {
   min-height: 60px;
 }
 
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	align-items: center;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+}
+
+.list section {
+	display: flex;
+	align-items: center;
+}
+
+.grid section {
+	flex-direction: column;
+	text-align: center;
+}
+
+.grid section > * {
+	margin: 0.1rem;
+}
+
+.list section {
+	flex-direction: row;
+	justify-content: left;
+}
+
+.list section > * {
+	margin: 0 1rem;
+	text-align: left;
+}
 
 
 

@@ -33,7 +33,7 @@
  .hero {
       grid-column: 2/4;
       grid-row: 1/3;
-      flex-direction: column;
+
   }
 
 .hero_text {
@@ -63,8 +63,7 @@
   .spotlight {
     grid-row: 1/4;
     grid-column: 4/5;
-    display: flex;
-    flex-direction: column;
+    
     }
 
 
