@@ -492,8 +492,8 @@ section > p {
 }
 
 .list section {
-	flex-direction: row;
-	justify-content: left;
+
+	justify-content: center;
 }
 
 .list section > * {
