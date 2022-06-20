@@ -5,20 +5,17 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 /*----------- HEADER --------------*/
 header {
-  margin: 0 auto;
+
   padding: 5px 0;
   background-color: #47b247;
 	display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
 	align-items: center;
-	justify-content: space-between;
 }
 
 .logo {
 	display: flex;
 	align-items: center;
 	margin-left: 1rem;
-  margin-right: 1rem;
 }
 .logo img {
 	width: 80px;
@@ -136,9 +133,11 @@ p {
   text-align: center;
 }
 
+/*
 .weather, .event, .pjoin, .ph-spotlight {
   display: grid;
 }
+*/
 .event_image {
   display: block;
   text-align: center;
@@ -167,15 +166,12 @@ p {
   grid-column: 2/3;
 }
 .weather_image {
-  grid-row: 2/2;
-  grid-column: 1/2;
-  text-align: right;
+  display:block;
+  text-align: center;
 }
 .weather_temperature {
-  grid-row: 2/2;
-  grid-column: 2/2;
   font-size: x-large;
-  text-align:left;
+  text-align:center;
   padding-left: 1.5rem;
 }
 .weather_look {
@@ -194,7 +190,7 @@ p {
   text-align: center;
 }
 .join_image {
-
+  display:block;
   grid-row: 2/2;
   grid-column: 1/2;
   text-align: center;
@@ -235,7 +231,7 @@ p {
 }
 /*----------- FOOTER --------------*/
 footer {
-  margin: 10px;
+
   font-size: 0.85rem;
   padding: 20px;
   display: grid;
@@ -348,7 +344,6 @@ img[data-src] {
 /* ------- Join Page --------*/
 main {
   display: grid;
-  /* grid-template-columns: auto; */
 }
 .membership {
   margin: 2rem 0;
