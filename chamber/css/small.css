@@ -411,18 +411,10 @@ form label.top input:required:valid {
 
 .thanks {
   display: inline-block;
-  margin: 5rem 30rem ;
-  border: 1px solid #445ba9;
-  border-radius: 10px;
-  padding: 5rem 2%;
- 
-}
- .hthanks {
-  font-size: 1.5rem;
-  color:rgb(6, 95, 183);
+  padding: 1rem 5%;
   text-align: center;
- }
-
+}
+ 
  textarea:focus {
   background: pink;
 }
@@ -490,8 +482,6 @@ section > p {
 	margin: 0 1rem;
 	text-align: left;
 }
-
-
 
 
 

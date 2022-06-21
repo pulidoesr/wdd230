@@ -1,15 +1,11 @@
 /* 35rem is also 560px when basefont is 16px */
 @media only screen and (min-width: 35rem) {
 
-  /* html, body {
-    height: 100vh;
-    width: 100vw;
-  } */
 
-  h1 {
+  /* h1 {
     margin-left: 2rem;
     }
-  
+  */
   nav ul li a {
     border: none;
     border-right: 1px solid rgba(0,0,0,0.3);
