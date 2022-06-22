@@ -31,7 +31,7 @@ webpage.textContent= `https://${company.webpage}`
 // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
 logo.setAttribute('src', `images/${company.logo}`);
 logo.setAttribute('style', `width:180px;height:185px`);
-webpage.setAttribute('href', "url")
+webpage.setAttribute('href', `https://${company.webpage}`)
 
 
  // Add/append the section(card) with the h2 element

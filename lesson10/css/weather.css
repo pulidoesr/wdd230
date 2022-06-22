@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+body {
+  font-size: 16px;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+header,
+main,
+footer {
+  margin: 1rem;
+  position: relative;
+}
+
+h1 {
+  color:#4088A3;
+  border-bottom: 1px solid #eee;
+  text-shadow: 0 0 15px #999;
+  width: auto;
+  text-align: center;
+}
+
+h2 {
+  color: #4088A3;
+  margin: 0;
+  width: auto;
+  text-align: center;
+}
+
+
+p {
+  width: auto;
+  text-align: center;
+}
+
+.weather {
+  width: auto;
+  text-align: center;
+}
