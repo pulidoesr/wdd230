@@ -40,6 +40,8 @@ function  displayResults(weatherData) {
   weatherData.weather.forEach(element => {
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
+    weatherIcon.setAttribute('width', 10);
+    weatherIcon.setAttribute('height', 10);
     captionDesc.textContent = desc.toUpperCase();
   });
   
