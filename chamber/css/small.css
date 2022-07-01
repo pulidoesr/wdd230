@@ -117,6 +117,11 @@ img {
   background-color: rgb(71, 178, 71);
   border-radius: 1em;
   cursor: pointer;
+  padding: 0.5em 1em;
+  color: white;
+  border-radius: 10px;
+  border: 1px solid white;
+  text-decoration: none;
 }
 .ph-item {
   background-color: rgb(6, 95, 183);
