@@ -61,14 +61,34 @@
   <div class="date"></div>
   <aside></aside>
 </header>
-  <div class="menu">
-    <button id="grid">Grid</button>
-    <button id="list">List</button>
+  <main class="contact">
+    <div class="visit_us">
+      <h2>Visit Us</h2>
+      <p>Evansville Chamber of Commerce</p>
+      <p>230 Main Street</p><p>
+      </p><p>Evansville, Indiana 47630</p>
+    
+      <h2>Office Hours</h2>
+      <p>Monday - Friday: 9:00 AM to 5:00 PM</p>
+    
   </div>
-<hr>
-  <main>
-    <div id="directory_list" class="grid">
-    </div>
+    <div class="cform"> 
+      <h2>Contact Us</h2>
+      <form method="get" action="questions.html">
+        <fieldset>
+            <legend>Your information</legend>
+          <label class="top"> First Name* <input type="text" name="fname" autofocus required> </label>
+          <label class="top"> Last Name* <input type="text" name="lname" required> </label>
+          <label class="top"> eMail* <input type="email" name="email" placeholder="someone@gmail.com" required> </label>
+          <label class="top"> Phone <input type="tel" name="phone" placeholder="1235552334" > </label>
+          <label class="top">What is your question?</label>
+          <textarea name="" id="" cols="22" rows="7" ></textarea>
+        </fieldset>
+        </fieldset>
+        
+        <input type="submit" value="Ask a question" class="submitBtn">
+    </form>   
+  </div>
   </main>
 <footer>
   <div class="foot_logo">
@@ -80,6 +100,5 @@
   <p> Last Modified: <span id="lastmodified"></span></p>
  </footer>
  <script src="js/scripts.js"></script>
- <script src="js/directory.js"></script>
   </body>
 </html>

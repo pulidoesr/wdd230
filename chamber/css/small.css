@@ -125,7 +125,7 @@ img {
 }
 .ph-item {
   background-color: rgb(6, 95, 183);
-  border: 1px solid gray;
+  border: 2px solid white;
   color: rgb(251, 249, 249);
   padding: 1rem;
   }
@@ -184,7 +184,6 @@ p {
 }
 .spotlight {
     display: grid;
-    border: 1px solid gray;    
     padding: 1rem;  
     text-align: center;
   }
@@ -235,11 +234,10 @@ footer {
   margin-right: auto;
 }
 /*---------- Discover Page ----------*/
-h2 {
+.h2_discover, .photo-gal {
+  text-align: center;
   color:yellow;
-  text-align: center;
   background-color:rgb(6, 95, 183);
-  text-align: center;
 }
 
 .discover_evansville {
@@ -259,12 +257,10 @@ h2 {
 }
 
 .discover div {
-  
   border: 1px solid #32292f;
   background-color: #ffffff;
   box-shadow: 3px 3px 10px rgb(54, 54, 54);
   padding: 10px;
-  
 }
 
 .discover-title {
@@ -338,6 +334,10 @@ img[data-src] {
   max-width: 900px;
   margin: 0 auto;
 }
+
+.p_gallery {
+  font-size: 1.5rem;
+}
 /* ------- Join Page --------*/
 main {
   display: grid;
@@ -406,10 +406,11 @@ form label.top input:required:valid {
   border-left: green solid 6px;
 }
 
-.thanks {
+.thanks .questions h1 {
   display: block;
   padding: 1rem 5%;
   text-align: center;
+  align-items: center;
   margin: 3rem 0;
   border: 1px solid #445ba9;
   border-radius: 10px;
@@ -431,59 +432,58 @@ form label.top input:required:valid {
 
 .menu button {
 	padding: 1rem;
+  cursor: pointer;
 }
 
-div.cards {
+#directory_list.grid {
+  margin: 0.1rem;
+  text-align: center;
+	align-items: center;
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+#directory_list.list {
+  margin: 0.1rem;
+  display:grid;
+  gap: .5em;
+  grid-template-columns: 1fr;
+  padding-bottom: 1em;
+}
+
+#directory_list.list section {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  text-align: inherit;
+  gap: 3px;
 }
 section {
   margin: 0.25rem;
   padding: 0.35rem;
   background-color: #eee;
   border: 1px solid #bbb;
-  flex-direction: column;
   align-items: center;
 }
 section > p {
   min-height: 60px;
 }
 
-.grid {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	align-items: center;
+/* ------- Contact Page --------*/
+
+.contact {
+  display:grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  padding: 5rem;
 }
 
-.list {
-	display: flex;
-	flex-direction: column;
+.visit_us h2{
+  margin: 2rem 0;
+  border: 1px solid #445ba9;
+  border-radius: 10px;
+  padding: 0.5rem 2%;
+  text-align: center;
 }
-
-.list section {
-	display: flex;
-	align-items: center;
-}
-
-.grid section {
-	text-align: center;
-}
-
-.grid section > * {
-	margin: 0.1rem;
-}
-
-.list section {
-
-	justify-content: center;
-}
-
-.list section > * {
-	margin: 0 1rem;
-	text-align: left;
-}
-
-
 
 
 
