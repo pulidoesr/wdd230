@@ -9,7 +9,6 @@ html, body {
  }
 
 header {
-
   padding: 5px 0;
   background-color: #47b247;
 	display: grid;
@@ -22,17 +21,18 @@ header {
 	margin-left: 1rem;
 }
 .logo img {
-	width: 80px;
+	width: 150px;
 	height: auto;
 }
 .social {
-  margin-left: .3rem;
-	margin-right: .3rem;
+  background-color: #47b247;
 }
 .social svg {
 	width: 25px;
 	height: auto;
+  background-color: #47b247;
 }
+
 
 /*----------- NAVIGATION --------------*/
 nav {
@@ -228,14 +228,20 @@ footer {
 }
 
 .foot_logo img {
-	width: 80px;
+	width: 150px;
 	height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 /*---------- Discover Page ----------*/
-.discover {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+h2 {
+  color:yellow;
+  text-align: center;
+  background-color:rgb(6, 95, 183);
+  text-align: center;
 }
+
 .discover_evansville {
   display:flex;
 }
@@ -247,7 +253,7 @@ footer {
 
 .discover {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
   padding: 20px
 }
@@ -284,12 +290,7 @@ footer {
 
 
 /*----------- BOXES BORDERS ---------------*/
-.box1, .box2, .box3, .box7, h2 {
-  padding: 5px 20px 10px 30px;
-  /*background-color: rgb(55, 148, 242);*/
-  border: transparent;
-  
-}
+
 .pic_demographics {
   float: left;
   padding: 0 20px 20px 0;
@@ -297,11 +298,16 @@ footer {
 .text_demographics {
   object-fit: fill;
 }
-.box7 .border {
+.box1, .box2 {
+  padding: 4em 0;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.box7, .border {
   margin-bottom: 10px;
 }
 
-.box7 .bottom {
+.box7, .bottom {
   margin: 0px;
 }
 /*----------- Lazyload images ---------------*/
@@ -327,6 +333,10 @@ img[data-src] {
   padding: 10px;
   margin: 10px 10px 20px 10px;
   text-align: center;
+}
+.border {
+  max-width: 900px;
+  margin: 0 auto;
 }
 /* ------- Join Page --------*/
 main {
