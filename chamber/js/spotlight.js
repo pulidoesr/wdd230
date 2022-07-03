@@ -20,9 +20,11 @@ function displayCompanies(company, count) {
   let address = document.createElement('p');
   let phone = document.createElement('p');
   let webpage = document.createElement('a');
-  let member = document.createElement('p')
+  let member = document.createElement('p');
 
-count = count + 1
+
+count = count + 1;
+
   
 // Change the textContent property of the h2 element to contain name of company
 h4.textContent = `${company.name}`;
@@ -31,7 +33,7 @@ h4.textContent = `${company.name}`;
 address.textContent= `${company.address}`;
 phone.textContent= `${company.phone}`;
 webpage.textContent= `https://${company.webpage}`;
-member.textContent = `${company.member_level}`
+member.textContent = `${company.member_level}`;
 
 // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. 
 logo.setAttribute('src', `images/${company.logo}`);
