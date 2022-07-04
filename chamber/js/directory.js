@@ -30,7 +30,7 @@ webpage.textContent= `https://${company.webpage}`;
 
 // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. 
 logo.setAttribute('src', `images/${company.logo}`);
-logo.setAttribute('style', `width:100px;height:105px`);
+logo.setAttribute('style', `width:80px;height:85px`);
 webpage.setAttribute('href', `https://${company.webpage}`);
 card.setAttribute('class',"individual");
 

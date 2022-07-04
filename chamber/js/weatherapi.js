@@ -37,14 +37,12 @@ function  displayResults(weatherData) {
 
   const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
 
+
   const desc = weatherData.weather[0].description;
   weatherData.weather.forEach(element => {
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
-    weatherIcon.setAttribute('width', 10);
-    weatherIcon.setAttribute('height', 10);
     captionDesc.textContent = desc.toUpperCase();
-  });
-  
+  });  
 }
 
