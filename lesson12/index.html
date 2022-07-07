@@ -4,18 +4,50 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href = "css/small.css" >
+  <link rel="stylesheet" href = "css/large.css" >
   <title>The Temple Inn & Suites</title>
 </head>
 <body>
+  <header>
+    <div class="container">
+      <div class="header_logo">
+        <picture>
+         <img src="images/thetempleinnsuites.webp" alt="The Temple Inn & Suites">
+        </picture>
+      </div>  
+      <nav>
+        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+          <ul id="primaryNav">
+            <li><a href="#" class="active">🏡 Home</a></li>
+            <li><a href="#">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+      </nav>
+    </div>
+    <hr class="rounded">
+  </header>
   <iframe
-  width="600"
-  height="450"
-  style="border:0"
-  loading="lazy"
-  allowfullscreen
-  referrerpolicy="no-referrer-when-downgrade"
-  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAcdvUWlfP3YF1AfxIttw1XuveCT9UgNxE
-    &q=Space+Needle,Seattle+WA">
-</iframe>
+    width="300"
+    height="350"
+    style="border:0"
+    loading="lazy"
+    allowfullscreen
+    referrerpolicy="no-referrer-when-downgrade"
+    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAcdvUWlfP3YF1AfxIttw1XuveCT9UgNxE
+      &q=Bethesda,MD">
+  </iframe>
+<footer>
+  <div class="foot_logo">
+    <picture>
+     <img src="images/thetempleinnsuites.webp" alt="The Temple Inn & Suites">
+    </picture>
+  </div>  
+  <p> &copy; 2022 | Newbugh Indiana </p>
+  <p> Last Modified: <span id="lastmodified"></span></p>
+ </footer>
+ <script src="js/main.js"></script>
 </body>
 </html>

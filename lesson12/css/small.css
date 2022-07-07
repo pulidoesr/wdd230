@@ -1,0 +1,92 @@
+/* The Temple Inn & Suites  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+/*----------- HEADER --------------*/
+html, body {
+  margin: 0;
+ }
+
+header {
+  padding: 5px 0;
+  background-color: #1E4881;
+  grid-template-columns: 1fr 1fr;
+	align-items: center;
+  display:grid;
+}
+
+.header_logo {
+	display: flex;
+	align-items: center;
+  position: relative;
+  float: left;
+  padding: 1rem;
+}
+.header_logo img {
+	width: 250px;
+	height: auto;
+}
+
+/*----------- NAVIGATION --------------*/
+nav {
+  background-color: transparent;
+  
+}
+nav button {
+  margin: .2rem 2vw;
+  border: none;
+  font-size: 2rem;
+  color: #D34E35
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+nav ul li a:hover {
+  background-color: #D34E35;
+  text-decoration: none;
+}
+
+nav ul li.active a:hover {
+  background-color: #D34E35;
+ 
+}
+
+nav ul {display:none; padding:0;}
+nav ul.open{display:block; background-color: white;}
+
+#hamburgerBtn span:nth-child(1) {display:block;}
+#hamburgerBtn span:nth-child(2) {display:none;}
+
+#hamburgerBtn.open span:nth-child(1) {display:none;}
+#hamburgerBtn.open span:nth-child(2) {display:block;}
+
+/*----------- BODY --------------*/
+body {
+  font-family: Verdana, sans-serif;
+}
+
+/*----------- MAIN --------------*/
+
+
+/*----------- FOOTER --------------*/
+footer {
+  display:grid;
+  font-size: 0.85rem;
+  padding: 20px;
+  background-color: #1E4881;
+  justify-content: center;
+  text-align: center;
+  color:#F8DC4C;
+  
+}
+
+.foot_logo img {
+	width: 250px;
+	height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

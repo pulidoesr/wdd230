@@ -2,25 +2,18 @@
 @media only screen and (min-width: 35rem) {
 
 
-  /* h1 {
-    margin-left: 2rem;
-    }
-  */
+  
   nav ul li a {
     border: none;
     border-right: 1px solid rgba(0,0,0,0.3);
     color: black;
   }
 
- /* main {
-      display: grid;
-      
-    }
-*/
+ 
   .hero {
       grid-column: 1/5;
       grid-row: 1/2;
-     /* flex-direction: column; */
+     
   }
   .hero_text {
     font-size: 2.5rem;
