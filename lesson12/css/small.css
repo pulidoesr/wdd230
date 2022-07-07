@@ -1,4 +1,4 @@
-/* The Temple Inn & Suites  */
+/* The Temple Inn & Suites Main */
 html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 /*----------- apply a natural box layout model to all elements --------------*/
@@ -6,21 +6,17 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*----------- HEADER --------------*/
 html, body {
   margin: 0;
+  font-family: 'Titillium Web', sans-serif;
  }
 
 header {
-  padding: 5px 0;
   background-color: #1E4881;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 3fr;
 	align-items: center;
   display:grid;
 }
 
 .header_logo {
-	display: flex;
-	align-items: center;
-  position: relative;
-  float: left;
   padding: 1rem;
 }
 .header_logo img {
@@ -31,7 +27,6 @@ header {
 /*----------- NAVIGATION --------------*/
 nav {
   background-color: transparent;
-  
 }
 nav button {
   margin: .2rem 2vw;
@@ -64,9 +59,7 @@ nav ul.open{display:block; background-color: white;}
 #hamburgerBtn.open span:nth-child(2) {display:block;}
 
 /*----------- BODY --------------*/
-body {
-  font-family: Verdana, sans-serif;
-}
+
 
 /*----------- MAIN --------------*/
 
@@ -89,4 +82,29 @@ footer {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* The Temple Inn & Suites Template */
+
+#attributes {
+  text-align:center;
+}
+#template {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+#color1, #color2, #color3 {
+  border: solid;
+  color: rgb(172, 107, 107);
+}
+#color1 {
+  background-color: #1E4881;
+}
+#color2 {
+  background-color: #F8DC4C;
+}
+#color3 {
+  background-color: #F1994C;
 }
