@@ -23,6 +23,13 @@ header {
 	width: 250px;
 	height: auto;
 }
+.social {
+  padding: 1rem;
+}
+.social svg {
+	width: 25px;
+	height: auto;
+}
 
 /*----------- NAVIGATION --------------*/
 nav {
@@ -107,4 +114,10 @@ footer {
 }
 #color3 {
   background-color: #F1994C;
+}
+#definitions {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  grid-template-columns: 1fr 1fr 1fr;
 }
