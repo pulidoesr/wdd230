@@ -1,0 +1,16 @@
+.three-col {
+  display:grid;
+  grid-template-columns:  250px 2fr 1fr;
+  column-gap: 40px;
+}
+
+.three-col img {
+  width: 250px;
+}
+.quote {
+  width: 300px;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #bedbed;
+  color: #777777;
+}
