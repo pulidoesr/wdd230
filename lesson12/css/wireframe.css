@@ -1,16 +1,8 @@
-/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+/* The Temple Inn & Suites Main */
 html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 /*----------- apply a natural box layout model to all elements --------------*/
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-
-/*----------- colors --------------*/
-:root {
-  --backgroundblue: #1E4881;
-  --textyellow: #F8DC4C;
-  --textorange: #F1994C;
-}
-
 /*----------- HEADER --------------*/
 html, body {
   margin: 0;
@@ -73,45 +65,8 @@ nav ul.open{display:block; background-color: white;}
 #hamburgerBtn.open span:nth-child(1) {display:none;}
 #hamburgerBtn.open span:nth-child(2) {display:block;}
 
-/*----------- BODY Home --------------*/
+/*----------- BODY --------------*/
 
-form {
-  width: 100%;
-  padding: .6rem;
-  margin: 0;
-}
-fieldset {
-  width: 100%;
-}
-form label.top {
-  display: block;
-  padding-top: .5rem;
-  color: #9c2c13;
-  font-size: 1rem;
-}
-form input.submitLocation {
-  border: none;
-  background-color: var(--backgroundblue);
-  color: white;
-  border-radius: 1rem;
-  padding: .75rem 1.5rem;
-  margin: 5rem 0 2rem ;
-  width: 96%;
-  max-width: 20rem;
-}
-
-form label.top input:required {
-  border-left: red solid 6px;
-}
-form label.top input:required:valid {
-  border-left: green solid 6px;
-}
-
-iframe {
-  width: 100%;
-  height: 100%;
-  padding: 3rem;
-}
 
 /*----------- MAIN --------------*/
 
@@ -136,7 +91,33 @@ footer {
   margin-right: auto;
 }
 
+/* The Temple Inn & Suites Template */
 
-
-
-
+#attributes {
+  text-align:center;
+}
+#template {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+#color1, #color2, #color3 {
+  border: solid;
+  color: rgb(172, 107, 107);
+}
+#color1 {
+  background-color: #1E4881;
+}
+#color2 {
+  background-color: #F8DC4C;
+}
+#color3 {
+  background-color: #F1994C;
+}
+#definitions {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  grid-template-columns: 1fr 1fr 1fr;
+}

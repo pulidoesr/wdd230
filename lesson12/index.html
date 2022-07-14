@@ -7,7 +7,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 <link rel="stylesheet" href = "css/small.css" >
+<link rel="stylesheet" href = "css/medium.css" >
 <link rel="stylesheet" href = "css/large.css" >
   <title>The Temple Inn & Suites</title>
 </head>
@@ -43,15 +45,55 @@
       </div>
     <hr class="rounded">
   </header>
-<footer>
-  <div class="foot_logo">
-    <picture>
-     <img src="images/thetempleinnsuites.webp" alt="The Temple Inn & Suites">
-    </picture>
-  </div>  
-  <p> &copy; 2022 | Bethesda Maryland </p>
-  <p> Last Modified: <span id="lastmodified"></span></p>
- </footer>
+  <div class="location">
+    <form method="get" action="">
+      <h2>Let us know where you want to go</h2>
+      <fieldset>
+        <label for="state" class="state top" name="fstate" autofocus required> Select a State</label> 
+        <select name="state" id="states">
+           <option></option>
+           <option value="Maryland">Maryland</option>
+           <option value="Utah">Utah</option>
+            <option value="California">California</option>
+        </select>
+        <label for="city" class="city top" name="fcity" autofocus required> Select a City</label> 
+        <select name="city" id="city">
+          <option></option>
+          <option value="Salt Lake">Salt Lake</option>
+          <option value="San Francisco">San Francisco</option>
+          <option value="Bethesda">Bethesda</option>
+       </select>
+       <h3>Dates</h3>
+        <label class="from_date">From: <input type="date" name="fromdate"></label>
+        <label class="to_date">To: <input type="date" name="todate"></label>
+      </fieldset>
+      <input type="submit" value="Send Location Destination" class="submitLocation">
+    </form> 
+    <div class="Map">
+      <iframe
+        style="border:0"
+        loading="lazy"
+        allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAcdvUWlfP3YF1AfxIttw1XuveCT9UgNxE&q=Bethesda,MD">
+      </iframe>
+    </div>  
+  </div>
+    <div class="trip_class">
+    <div class="temple_only"></div>
+    <div class="temple_wellness"></div>
+    <div class="temple_foodie"></div>
+    <div class="temple_nature"></div>
+</div>
+  <footer>
+    <div class="foot_logo">
+      <picture>
+      <img src="images/thetempleinnsuites.webp" alt="The Temple Inn & Suites">
+      </picture>
+    </div>  
+    <p> &copy; 2022 | Bethesda Maryland </p>
+    <p> Last Modified: <span id="lastmodified"></span></p>
+  </footer>
  <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,15 @@
+/* 35rem is also 560px when basefont is 16px */
+@media only screen and (min-width: 35rem) {
+  
+  nav ul li a {
+    border: none;
+    border-right: 1px solid rgba(0,0,0,0.3);
+    color: black;
+  }
+  fieldset {
+    display: grid;
+    width: 80%;
+    grid-gap: 1rem;
+    padding: .5rem;
+  }
+}

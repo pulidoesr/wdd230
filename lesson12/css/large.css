@@ -18,4 +18,14 @@
     display: flex;
     margin-left: 2vw;
   }
+
+/*----------- BODY Home --------------*/
+
+.location {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+form {
+  padding: 1rem;
+}
 }
