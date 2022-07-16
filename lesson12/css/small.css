@@ -15,6 +15,7 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 html, body {
   margin: 0;
   font-family: 'Titillium Web', sans-serif;
+  font-size: 1rem;
  }
 
 header {
@@ -113,9 +114,30 @@ iframe {
   padding: 3rem;
 }
 
-/*----------- MAIN --------------*/
-
-
+.trip h2 {
+  padding: 0.5rem;
+  text-align: center;
+}
+.trip_class {
+  display: grid;
+  column-gap: 0.5rem;
+  align-items: center;
+}
+.temple_only, .temple_wellness {
+  display: block;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.temple_only img{
+  width: 15rem;
+  height: 20rem;
+}
+.temple_wellness img{
+  width: 20rem;
+  height: 15rem;
+}
 /*----------- FOOTER --------------*/
 footer {
   display:grid;
