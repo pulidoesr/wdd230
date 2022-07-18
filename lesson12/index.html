@@ -45,6 +45,10 @@
       </div>
     <hr class="rounded">
   </header>
+  <div class="local_storage">
+    <p><span class="label">Number of Visits:</span><span class="visits"></span> <span> - </span>
+    Days since last visit:<span class="today"></span></p>
+  </div>
   <div class="location">
     <form method="get" action="">
       <div class="bg-image"></div>
@@ -102,13 +106,23 @@
           <picture>
             <img src="images/destination-theme-outdoor-7236-ver-clsc.jpg" alt="temple & wellness">
           </picture>
-          <a href="#" title="temple & wellness" class="temple_wellnes">Temple & Wellness</a>
+          <a href="#" title="temple & wellness" class="temple_wellness">Temple & Wellness</a>
         </div>
-        <div class="temple_foodie">Temple & Foodie</div>
-        <div class="temple_nature">Temple & Nature</div>
+        <div class="temple_foodie">
+          <picture>
+            <img src="images/destination-theme-outdoor-7236-ver-clsc.jpg" alt="temple foodie">
+          </picture>
+            <a href="#" title="temple & foodie" class="temple_foodie">Temple & Foodie</a>
+        </div>
+        <div class="temple_nature">
+          <picture>
+            <img src="images/destination-theme-outdoor-7236-ver-clsc.jpg" alt="temple nature">
+          </picture>
+            <a href="#" title="temple & nature" class="temple_nature">Temple & Nature</a>
+        </div>
       </div>
     </div>
-</div>
+  </div>
   <footer>
     <div class="foot_logo">
       <picture>
@@ -118,6 +132,7 @@
     <p> &copy; 2022 | Bethesda Maryland </p>
     <p> Last Modified: <span id="lastmodified"></span></p>
   </footer>
- <script src="js/main.js"></script>
+<script src="js/main.js"></script>
+<script src="js/localstorage.js"></script>
 </body>
 </html>

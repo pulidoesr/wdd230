@@ -75,7 +75,12 @@ nav ul.open{display:block; background-color: white;}
 #hamburgerBtn.open span:nth-child(2) {display:block;}
 
 /*----------- BODY Home --------------*/
-
+.local_storage {
+  border: var(--backgroundblue);
+  display: block;
+  border-style: solid;
+  text-align: center;
+}
 form {
   width: 100%;
   padding: .6rem;
@@ -123,7 +128,7 @@ iframe {
   column-gap: 0.5rem;
   align-items: center;
 }
-.temple_only, .temple_wellness {
+.temple_only, .temple_wellness, .temple_foodie, .temple_nature {
   display: block;
   align-items: center;
   margin-left: auto;
@@ -135,6 +140,14 @@ iframe {
   height: 20rem;
 }
 .temple_wellness img{
+  width: 20rem;
+  height: 15rem;
+}
+.temple_foodie img{
+  width: 20rem;
+  height: 15rem;
+}
+.temple_nature img{
   width: 20rem;
   height: 15rem;
 }
@@ -157,8 +170,45 @@ footer {
   margin-left: auto;
   margin-right: auto;
 }
+/*----------- Booking --------------*/
+#temple_list.grid {
+  margin: 0.1rem;
+  text-align: center;
+	align-items: center;
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
 
+#temple_list.list {
+  margin: 0.1rem;
+  display:grid;
+  gap: .5em;
+  grid-template-columns: 1fr;
+  padding-bottom: 1em;
+}
 
+#temple_list.list section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  text-align: inherit;
+  gap: 3px;
+  font-size: small;
+}
+
+#temple_list.list h2 {
+  font-size: small;
+}
+
+section {
+  margin: 0.25rem;
+  padding: 0.35rem;
+  background-color: #eee;
+  border: 1px solid #bbb;
+  align-items: center;
+}
+section > p {
+  min-height: 60px;
+}
 
 
 

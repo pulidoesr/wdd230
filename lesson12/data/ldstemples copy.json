@@ -1,6 +1,4 @@
-{
-  "temples": [
-  {"Temple":"Aba Nigeria Temple",
+[{"Temple":"Aba Nigeria Temple",
 "Latitude":"5.147644",
 "Longitude":"7.356719",
 "Address":"Okpu-Umuoba Road Off Aba-Owerri Road at Union Bank",
@@ -2152,5 +2150,4 @@
 "State":"California",
 "Postal Code":"",
 "Country":"United States","Phone":""}
- ]
-}
+]
