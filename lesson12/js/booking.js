@@ -1,5 +1,6 @@
 const requestURL = 'https://pulidoesr.github.io/wdd230/lesson12/data/ldstemples.json';
 const container = document.getElementById("temple_list");
+let line = 0;
 // Read the objects
 fetch(requestURL)
   .then(function (response) {
@@ -14,43 +15,41 @@ fetch(requestURL)
 function displayTemples(temples) {
   // Create elements to add to the documewnt
   let card = document.createElement('section');
-  let h2 = document.createElement('h2');
-  let logo = document.createElement('img');
+  let tname = document.createElement('h2');
   let address = document.createElement('p');
-  let country = document.createElement('p');
-  let state = document.createElement('p');
-  let city = document.createElement('p');
+  let city_state_country = document.createElement('p');
   let phone = document.createElement('p');
   let webpage = document.createElement('a');
+  let select = document.createElement('button');
   
-// Change the textContent property of the h2 element to contain name of company
-h2.textContent = `${temples.Temple}`;
+  line = line + 1;
+  
+// Change the textContent property of the h2 element to contain name of Temple
+tname.textContent = `${temples.Temple}`;
 
 // Change the textContent property of the additional element to contain the data
 address.textContent= `${temples.Address}`;
-city.textContent= `${temples.City}`;
-state.textContent= `${temples.State}`;
-country.textContent= `${temples.Country}`;
+city_state_country.textContent = `${temples.City}, ${temples.State} ${temples.Country}`;
 phone.textContent= `${temples.Phone}`;
-webpage.textContent= `${temples.Link}`;
+webpage.textContent= '   Webpage  ';
+select.textContent= '    Select   ';
 
 
-// Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. 
-// logo.setAttribute('src', `images/${temple.logo}`);
-// logo.setAttribute('style', `width:80px;height:85px`);
-// webpage.setAttribute('href', `https://${temple.webpage}`);
+// Set up Attributes
+webpage.setAttribute('href', `${temples.Link}`);
+webpage.setAttribute('target', '_blank');
+select.setAttribute('class', `button${line} selected`);
 card.setAttribute('class',"individual");
 
-
  // Add/append the section(card) with the h2 element
- card.appendChild(h2);
+ card.appendChild(tname);
  card.appendChild(address);
- card.appendChild(city);
- card.appendChild(state);
- card.appendChild(country);
+ card.appendChild(city_state_country);
  card.appendChild(phone);
  card.appendChild(webpage);
-  // Add/append the existing HTML div with the cards class with the section(card)
+ card.appendChild(select);
+
+ // Add/append the existing HTML div with the cards class with the section(card)
   document.querySelector('#temple_list').appendChild(card);
 }
 
@@ -62,7 +61,6 @@ const display = document.querySelector("#temple_list");
 gridbutton.addEventListener("click", () => {
 	display.classList.add("grid");
 	display.classList.remove("list");
-  
 });
 
 // List Button
@@ -72,3 +70,10 @@ function showList() {
 	display.classList.remove("grid");
 }
 
+// Selected Button
+
+const selectbutton = document.querySelector("#temple_list");
+selectbutton.addEventListener("click",() => {
+  const tname = document.querySelector("h2");
+  localStorage.setItem("temple-selected",tname);
+  })
