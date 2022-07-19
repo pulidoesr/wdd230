@@ -171,6 +171,10 @@ footer {
   margin-right: auto;
 }
 /*----------- Booking --------------*/
+
+.menu {
+  text-align: center;
+}
 #temple_list.grid {
   margin: 0.1rem;
   text-align: center;

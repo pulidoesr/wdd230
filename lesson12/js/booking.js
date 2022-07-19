@@ -10,8 +10,8 @@ fetch(requestURL)
     const temples = jsonObject['temples'];
     temples.forEach(displayTemples);
   });
-
-function displayTemples(temple) {
+  
+function displayTemples(temples) {
   // Create elements to add to the documewnt
   let card = document.createElement('section');
   let h2 = document.createElement('h2');
@@ -24,16 +24,16 @@ function displayTemples(temple) {
   let webpage = document.createElement('a');
   
 // Change the textContent property of the h2 element to contain name of company
-h2.textContent = `${temple.Temple}`;
+h2.textContent = `${temples.Temple}`;
 
 // Change the textContent property of the additional element to contain the data
-address.textContent= `${temple.Address}`;
-city.textContent= `${temple.City}`;
-state.textContent= `${temple.State}`;
-country.textContent= `${temple.Country}`;
-phone.textContent= `${temple.Phone}`;
+address.textContent= `${temples.Address}`;
+city.textContent= `${temples.City}`;
+state.textContent= `${temples.State}`;
+country.textContent= `${temples.Country}`;
+phone.textContent= `${temples.Phone}`;
+webpage.textContent= `${temples.Link}`;
 
-//  webpage.textContent= `https://${temple.webpage}`;
 
 // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. 
 // logo.setAttribute('src', `images/${temple.logo}`);
@@ -49,9 +49,9 @@ card.setAttribute('class',"individual");
  card.appendChild(state);
  card.appendChild(country);
  card.appendChild(phone);
- 
+ card.appendChild(webpage);
   // Add/append the existing HTML div with the cards class with the section(card)
-  document.querySelector('#directory_list').appendChild(card);
+  document.querySelector('#temple_list').appendChild(card);
 }
 
 const gridbutton = document.querySelector("#grid");
