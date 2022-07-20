@@ -40,10 +40,13 @@ function location_change() {
   var state = document.getElementById("sstate");
   var country = document.getElementById("scountry");
   var string = "https://www.google.com/maps/embed/v1/place?key=AIzaSyAcdvUWlfP3YF1AfxIttw1XuveCT9UgNxE&q="
+
+  // Store the hiden fields City, State, Country selected
   city = select.options[select.selectedIndex].value;
   state = cities[select.selectedIndex].State;
   country = cities[select.selectedIndex].Country;
-  // change the google map
+
+  // change google map
   source.src = `${string}${city},${state},${country}`;
 
   // store the new number of visits value
