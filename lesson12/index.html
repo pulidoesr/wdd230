@@ -50,23 +50,29 @@
     Days since last visit:<span class="today"></span></p>
   </div>
   <div class="location">
-    <form method="get" action="">
-      <div class="bg-image"></div>
+    <form method="get" action="" name="form_location">
       <h2>Let us know where you want to go</h2>
-      </select id="temple_city_select" name="city_select">
+      <fieldset>
+        <label for="city" class="city top" name="selected" autofocus required> Select a City</label>
+        <select id="city_select" name="city" size="3" onclick="location_change()">
+        </select>
+        <input type="hidden" id="scity" name="fcity">
+        <input type="hidden" id="scountry" name="fcountry">
+        <input type="hidden" id="sstate" name="fstate">
        <h3>Dates</h3>
-        <label class="from_date">From: <input type="date" name="fromdate"></label>
-        <label class="to_date">To: <input type="date" name="todate"></label>
+        <label class="from_date">From: <input type="date" name="fromdate" required></label>
+        <label class="to_date">To: <input type="date" name="todate" required></label>
       </fieldset>
       <input type="submit" value="Send my Destination" class="submitLocation">
     </form> 
-    <div class="Map">
+    <div class="map">
       <iframe
+        id="googlemap"
         style="border:0"
         loading="lazy"
         allowfullscreen
         referrerpolicy="no-referrer-when-downgrade"
-        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAcdvUWlfP3YF1AfxIttw1XuveCT9UgNxE&q=Bethesda,MD">
+        src = "https://www.google.com/maps/embed/v1/place?key=AIzaSyAcdvUWlfP3YF1AfxIttw1XuveCT9UgNxE&q=Bethesda,MD, US">
       </iframe>
     </div>  
   </div>
