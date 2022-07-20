@@ -1,8 +1,8 @@
-const requestURL = 'https://pulidoesr.github.io/wdd230/lesson12/data/ldstemples.json';
+const templeURL = 'https://pulidoesr.github.io/wdd230/lesson12/data/ldstemples.json';
 const container = document.getElementById("temple_list");
 let line = 0;
 // Read the objects
-fetch(requestURL)
+fetch(templeURL)
   .then(function (response) {
     return response.json();
   })

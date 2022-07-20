@@ -1,6 +1,9 @@
 /* 35rem is also 560px when basefont is 16px */
 @media only screen and (min-width: 35rem) {
-  
+  html, body {
+    height: 100vh;
+    width: 100vw;
+  }
   nav ul li a {
     border: none;
     border-right: 1px solid rgba(0,0,0,0.3);
@@ -8,12 +11,16 @@
   }
   fieldset {
     display: grid;
-    width: 80%;
     grid-gap: 1rem;
     padding: .5rem;
   }
 /*----------- BODY Home --------------*/  
+.location {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
 .trip_class {
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   padding: .2rem;
 }

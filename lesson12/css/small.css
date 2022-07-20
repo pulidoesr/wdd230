@@ -88,12 +88,14 @@ form {
 }
 fieldset {
   width: 100%;
+
 }
 form label.top {
   display: block;
   padding-top: .5rem;
   color: var(--textorange);
   font-size: 1rem;
+  font-weight: bold;
 }
 form input.submitLocation {
   border: none;
