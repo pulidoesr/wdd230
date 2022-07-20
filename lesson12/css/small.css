@@ -235,4 +235,11 @@ section > p {
   margin-right: 1%;
 }
 
+/* ------- Service & Policies --------*/
+.information {
+  display:grid;
+  grid-gap: 1px;
+  border: var(--backgroundblue);
+}
+
 

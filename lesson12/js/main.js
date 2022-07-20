@@ -6,7 +6,24 @@ function toggleMenu() {
 const x = document.getElementById('hamburgerBtn');
   x.onclick = toggleMenu;
 
-  // Last date modified
+// Last date modified
 let oLastModif = new Date(document.lastModified);
 document.getElementById('lastmodified').textContent = oLastModif;
 
+// Last city selected
+let city = window.localStorage.getItem("city");
+let state = window.localStorage.getItem("state");
+let country = window.localStorage.getItem("country");
+const scity = document.querySelector(".scity");
+const sstate = document.querySelector(".sstate");
+const scountry = document.querySelector(".scountry");
+
+if (city != null) { 
+  scity.textContent = city;
+}
+if (state != null) {
+  sstate.textContent = state;
+}
+if (country != null) {
+  scountry.textContent = country;
+}

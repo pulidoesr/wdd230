@@ -39,6 +39,7 @@ select.textContent= '    Select   ';
 webpage.setAttribute('href', `${temples.Link}`);
 webpage.setAttribute('target', '_blank');
 select.setAttribute('class', `button${line} selected`);
+select.setAttribute('id', 'selectedtemple')
 card.setAttribute('class',"individual");
 
  // Add/append the section(card) with the h2 element
@@ -71,9 +72,10 @@ function showList() {
 }
 
 // Selected Button
-
-const selectbutton = document.querySelector("#temple_list");
-selectbutton.addEventListener("click",() => {
-  const tname = document.querySelector("h2");
+const templelist = document.querySelector("#temple_list");
+templelist.addEventListener("clik", () => {
+const tname = document.querySelector(templelist.section.Temple);
+  console.log(tname);
   localStorage.setItem("temple-selected",tname);
   })
+
