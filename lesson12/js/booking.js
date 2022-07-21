@@ -79,14 +79,13 @@ const tname = document.querySelector(templelist.section.Temple);
   localStorage.setItem("temple-selected",tname);
   })
 
-// Count People
+// read the url parameters coming from previous page  
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const pfromdate = urlParams.get('fromdate')
+const ptodate = urlParams.get('todate')
+var fromdate = document.querySelector(".fromdate");
+var todate = document.querySelector(".todate");
+fromdate.textContent = pfromdate;
+todate.textContent = ptodate;
 
-function countPeople() {
-  document.getElementById("people").stepUp(5);
-}
-
-// Count Rooms
-
-function countRooms() {
-  document.getElementById("rooms").stepUp(5);
-}

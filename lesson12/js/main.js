@@ -34,10 +34,13 @@ if (country != null) {
 
 }
 
-var sfromdate = document.querySelector("#fromdate")
-var stodate = document.querySelector("#todate");
+var sfromdate = document.querySelector(".fromdate")
+var stodate = document.querySelector(".todate");
+localStorage.setItem("fromdate", sfromdate.value);
+localStorage.setItem("todate",stodate.value)
+
 if (sfromdate > stodate) {
   alert("Incorrect date");
 }
-sessionStorage.setItem("fromdate",sfromdate);
-sessionStorage.setItem("todate", stodate);
+sessionStorage.setItem("fromdate",sfromdate.value);
+sessionStorage.setItem("todate", stodate.value);
