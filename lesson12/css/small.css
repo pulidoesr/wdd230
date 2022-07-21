@@ -97,7 +97,7 @@ form label.top {
   font-size: 1rem;
   font-weight: bold;
 }
-form input.submitLocation {
+form input#submitreservation {
   border: none;
   background-color: var(--backgroundblue);
   color: white;
@@ -130,7 +130,7 @@ iframe {
   column-gap: 0.5rem;
   align-items: center;
 }
-.temple_only, .temple_wellness, .temple_foodie, .temple_nature {
+.temple_only, .temple_family, .temple_foodie, .temple_nature {
   display: block;
   align-items: center;
   margin-left: auto;
@@ -141,7 +141,7 @@ iframe {
   width: 15rem;
   height: 20rem;
 }
-.temple_wellness img{
+.temple_family img{
   width: 20rem;
   height: 15rem;
 }
@@ -173,9 +173,28 @@ footer {
   margin-right: auto;
 }
 /*----------- Booking --------------*/
-
+.hselection {
+  display: grid;
+}
 .menu {
   text-align: center;
+}
+.bselection, .weather, .hforecast {
+  border: var(--backgroundblue);
+  display: block;
+  border-style: solid;
+  text-align: center;
+  padding: .5rem;
+}
+#bookBtn {
+  border: none;
+  background-color: var(--backgroundblue);
+  color: white;
+  border-radius: 1rem;
+  padding: .75rem 1.5rem;
+  margin: 5rem 0 2rem ;
+  width: 96%;
+  max-width: 20rem;
 }
 #temple_list.grid {
   margin: 0.1rem;

@@ -79,3 +79,12 @@ const tname = document.querySelector(templelist.section.Temple);
   localStorage.setItem("temple-selected",tname);
   })
 
+// Count People
+function countPeople() {
+  document.getElementById("people").stepUp(5);
+}
+
+// Count Rooms
+function countRooms() {
+  document.getElementById("rooms").stepUp(5);
+}

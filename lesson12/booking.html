@@ -43,11 +43,66 @@
       </div>
     <hr class="rounded">
   </header>
+  <div class="hselection">
+    <div class="bselection">
+      <h2>Your Temple Destination</h2>
+      <strong><span class="scity"></span></strong><span> - </span>
+      <strong><span class="sstate"></span></strong><span> - </span>
+      <strong><span class="scountry"></span></strong>
+      <p><strong>From   : </strong><span class="fromdate"></span><span> | </span>
+      <strong>To     : </strong><span class="todate"></span></p> 
+      <form method="get" action="" class="bookform">
+        <fieldset >
+            <legend>Your information</legend>
+          <label class="top"> First Name* <input type="text" name="fname" autofocus required> </label>
+          <label class="top"> Last Name* <input type="text" name="lname" required> </label>
+          <label class="top"> eMail* <input type="email" name="email" placeholder="someone@gmail.com" required> </label>
+          <label class="top"> Phone <input type="" name="phone" placeholder="1235552334" > </label>
+          <label class="top">Number of people<input type="number" id="people" required></label>
+          <button onclick="countpeople()"></button>
+          <label class="top">Number of rooms<input type="number" id="rooms" required></label>
+          <button onclick="countrooms()"></button>
+        </fieldset>
+        <label></label><input type="submit" value="book my reservation" id="bookBtn"></label>
+      </form>
+    </div>   
+    <div class="weather">
+      <h3>Current Weather</h3>
+      <figure>
+        <img src="placeholder" alt="placeholder" id="weather-icon" />
+        <figcaption></figcaption>  
+      </figure>
+      <p>The current temperature is : <span id="current-temp"></span> &deg;F</p>
+      <p>Wind Speed: <span id="wind_speed"></span> mi/h
+        Wind Chill: <span id="wind_chill"></span>
+      </p>Feels Like: <span id="feels_like"></span>&deg;F 
+          Humidity: <span id="humidity"></span>%
+    </div>
+    <div class="hforecast">
+      <h3>Weather Forecast</h3>
+      <h4>My key doesn't work with the new API 3.0 Forecast </h4>
+      <div class="wforecast">
+        <figure>
+          <img src="placeholder" alt="placeholder" id="weather-icon-1" />
+          <figcaption></figcaption>  
+        </figure>
+        <figure>
+          <img src="placeholder" alt="placeholder" id="weather-icon-2" />
+          <figcaption></figcaption>
+        </figure>  
+        <figure>
+            <img src="placeholder" alt="placeholder" id="weather-icon-3" />
+            <figcaption></figcaption>  
+        </figure>
+      </div>
+    </div>
+  </div>
+  <hr>
   <div class="menu">
     <button id="grid">Grid</button>
     <button id="list">List</button>
   </div>
-<hr>
+  <hr>
   <main>
     <div id="temple_list" class="grid">
     </div>
@@ -63,5 +118,6 @@
  </footer>
  <script src="js/main.js"></script>
  <script src="js/booking.js"></script>
+ <script src="js/weatherapi.js"></script>
 </body>
 </html>

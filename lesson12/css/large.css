@@ -28,8 +28,14 @@
 form {
   padding: 1rem;
 }
-
-
+/* ------- booking Page --------*/
+.hselection {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.wforecast {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 /* ------- Contact Page --------*/
 .temple {
   margin: 5rem 0 1% 1%;

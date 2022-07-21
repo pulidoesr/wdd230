@@ -24,6 +24,10 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   padding: .2rem;
 }
+/* ------- booking Page --------*/
+.hselection {
+  grid-template-columns: 1fr 1fr;
+}
 /* ------- Contact Page --------*/
 .contact {
 grid-template-columns: 1fr 1fr;

@@ -59,10 +59,10 @@
         </select>
         
        <h3>Dates</h3>
-        <label class="from_date">From: <input type="date" name="fromdate" required></label>
-        <label class="to_date">To: <input type="date" name="todate" required></label>
+        <label class="from_date">From: <input type="date" class="fromdate" name="fromdate" required></label>
+        <label class="to_date">To: <input type="date" class="todate" name="todate" required></label>
       </fieldset>
-      <input type="submit" value="Book my Hotel" class="submitLocation">
+      <input type="submit" value="Book my Hotel" id="submitreservation" onclick="location_change()">
     </form> 
     <div class="map">
       <iframe
@@ -84,21 +84,21 @@
           </picture>
           <a href="#" title="temple only" class="temple_only">Temple Only</a>
         </div>
-        <div class="temple_wellness">
+        <div class="temple_family">
           <picture>
-            <img src="images/destination-theme-outdoor-7236-ver-clsc.jpg" alt="temple & wellness">
+            <img src="images/stock-brand-278684-sq.jpg" alt="temple & family">
           </picture>
-          <a href="#" title="temple & wellness" class="temple_wellness">Temple & Wellness</a>
+          <a href="#" title="temple & wellness" class="temple_family">Temple & family</a>
         </div>
         <div class="temple_foodie">
           <picture>
-            <img src="images/destination-theme-outdoor-7236-ver-clsc.jpg" alt="temple foodie">
+            <img src="images/stock-summer-278730-sq.jpg" alt="temple foodie">
           </picture>
             <a href="#" title="temple & foodie" class="temple_foodie">Temple & Foodie</a>
         </div>
         <div class="temple_nature">
           <picture>
-            <img src="images/destination-theme-outdoor-7236-ver-clsc.jpg" alt="temple nature">
+            <img src="images/curated-collection-laketahoe.jpg" alt="temple nature">
           </picture>
             <a href="#" title="temple & nature" class="temple_nature">Temple & Nature</a>
         </div>

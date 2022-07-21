@@ -25,6 +25,8 @@ function location_change() {
   var city = document.getElementById("scity");
   var state = document.getElementById("sstate");
   var country = document.getElementById("scountry");
+  var fromdate = document.getElementById("fromdate");
+  var todate = document.getElementById("todate");
   var string = "https://www.google.com/maps/embed/v1/place?key=AIzaSyAcdvUWlfP3YF1AfxIttw1XuveCT9UgNxE&q="
 
   // Store the hiden fields City, State, Country selected
@@ -35,8 +37,10 @@ function location_change() {
   // change google map
   source.src = `${string}${city},${state},${country}`;
 
-  // store the new number of visits value
+  // store the cit, state, country last selected
   localStorage.setItem("city",city);
   localStorage.setItem("state",state);
   localStorage.setItem("country",country); 
+  localStorage.setItem("fromdate",fromdate.value);
+  localStorage.setItem("todate",todate.value);
 }
