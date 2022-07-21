@@ -41,6 +41,7 @@ function location_change() {
   localStorage.setItem("city",city);
   localStorage.setItem("state",state);
   localStorage.setItem("country",country); 
-  localStorage.setItem("fromdate",fromdate.value);
-  localStorage.setItem("todate",todate.value);
+  if (fromdate != null && todate != null) {
+    localStorage.setItem("fromdate",fromdate.value);
+    localStorage.setItem("todate",todate.value);}
 }
