@@ -49,6 +49,7 @@ function  displayResults(weatherData) {
 }
 
 //  http://api.openweathermap.org/data/3.0/onecall/timemachine?lat=39.099724&lon=-94.578331&dt=1643803200&appid={API key}
+
 let url2 = 'https://api.openweathermap.org/data/3.0/onecall/timemachine?lat=';
 let appid2 = '&appid=cb4343a1424216be70f9ceed6101df98';
 url2 = url2 + lat + '&lon=' + lon + '&dt=' + dt + appid2;

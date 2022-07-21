@@ -25,8 +25,6 @@ function location_change() {
   var city = document.getElementById("scity");
   var state = document.getElementById("sstate");
   var country = document.getElementById("scountry");
-  var fromdate = document.getElementById("fromdate");
-  var todate = document.getElementById("todate");
   var string = "https://www.google.com/maps/embed/v1/place?key=AIzaSyAcdvUWlfP3YF1AfxIttw1XuveCT9UgNxE&q="
 
   // Store the hiden fields City, State, Country selected
@@ -41,7 +39,4 @@ function location_change() {
   localStorage.setItem("city",city);
   localStorage.setItem("state",state);
   localStorage.setItem("country",country); 
-  if (fromdate != null && todate != null) {
-    localStorage.setItem("fromdate",fromdate.value);
-    localStorage.setItem("todate",todate.value);}
 }

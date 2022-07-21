@@ -48,4 +48,5 @@ var stodate = document.querySelector("#todate");
 if (sfromdate > stodate) {
   alert("Incorrect date");
 }
-
+sessionStorage.setItem("fromdate",sfromdate);
+sessionStorage.setItem("todate", stodate);
