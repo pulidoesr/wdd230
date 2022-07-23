@@ -235,6 +235,11 @@ section > p {
   min-height: 60px;
 }
 
+/*----------- Booking --------------*/
+.thanks {
+  display: block;
+  text-align: center;
+}
 /* ------- Contact Page --------*/
 
 .contact {
