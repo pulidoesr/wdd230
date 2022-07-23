@@ -239,6 +239,14 @@ section > p {
 .thanks {
   display: block;
   text-align: center;
+  padding: 2rem;
+}
+.return_main {
+  font-size: 1rem;
+  border-radius: 2%;
+  color: var(--textorange);
+  border-style: solid;
+  padding: .5rem;
 }
 /* ------- Contact Page --------*/
 
