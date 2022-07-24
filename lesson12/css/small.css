@@ -248,6 +248,9 @@ section > p {
   border-style: solid;
   padding: .5rem;
 }
+#wforecast {
+  display: grid;
+}
 /* ------- Contact Page --------*/
 
 .contact {

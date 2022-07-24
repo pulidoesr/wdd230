@@ -32,7 +32,7 @@ form {
 .hselection {
   grid-template-columns: 1fr 1fr 1fr;
 }
-.wforecast {
+#wforecast {
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
 }

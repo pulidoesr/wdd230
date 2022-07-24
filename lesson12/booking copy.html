@@ -77,33 +77,45 @@
           Humidity: <span id="humidity"></span>%
     </div>
     <div class="hforecast">
-      <h3>Weather Forecast </h3>
-      <span id="temple_selected"></span>
-      <div id="wforecast">
+      <h3>Weather Forecast</h3>
+      <h4>My key doesn't work with the new API 3.0 Forecast </h4>
+      <div class="wforecast">
+        <figure>
+          <img src="placeholder" alt="placeholder" id="weather-icon-1" />
+          <figcaption></figcaption>  
+        </figure>
+        <figure>
+          <img src="placeholder" alt="placeholder" id="weather-icon-2" />
+          <figcaption></figcaption>
+        </figure>  
+        <figure>
+            <img src="placeholder" alt="placeholder" id="weather-icon-3" />
+            <figcaption></figcaption>  
+        </figure>
       </div>
     </div>
   </div>
-  <span class="latitude"></span><span class="longitud"></span>
-  <fieldset>
-    <label for="temple" class="temple_select" name="selected" autofocus required> Select a Temple</label>
-    <select id="temple_select" name="temple_list" size="5" onclick="temple_selected()">
-    </select>
-  </fieldset>
-  <div class="temple_info">
+  <hr>
+  <div class="menu">
+    <button id="grid">Grid</button>
+    <button id="list">List</button>
+  </div>
+  <hr>
+  <main>
+    <div id="temple_list" class="grid">
+    </div>
+  </main>
+<footer>
+  <div class="foot_logo">
+    <picture>
+     <img src="images/thetempleinnsuites.webp" alt="The Temple Inn & Suites">
+    </picture>
   </div>  
-  <footer>
-    <div class="foot_logo">
-      <picture>
-      <img src="images/thetempleinnsuites.webp" alt="The Temple Inn & Suites">
-      </picture>
-    </div>  
-    <p> &copy; 2022 | Bethesda Maryland </p>
-    <p> Last Modified: <span id="lastmodified"></span></p>
-  </footer>
-<script src="js/main.js"></script>
-<script src="js/booking.js"></script>
-<script src="js/temples.js"></script>
-<script src="js/weatherapi.js"></script>
-
+  <p> &copy; 2022 | Bethesda Maryland </p>
+  <p> Last Modified: <span id="lastmodified"></span></p>
+ </footer>
+ <script src="js/main.js"></script>
+ <script src="js/booking.js"></script>
+ <script src="js/weatherapi.js"></script>
 </body>
 </html>

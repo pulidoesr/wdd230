@@ -10,9 +10,7 @@ let url = 'https://api.openweathermap.org/data/2.5/weather?q=';
 let city = document.querySelector(".scity");
 let country = document.querySelector(".scountry");
 let appid = '&appid=cb4343a1424216be70f9ceed6101df98&units=imperial';
-var lat = -36.8667;
-var lon = 174.7667;
-var dt = 1658364761;
+
 url = url + city.innerHTML + ',' + country.innerHTML + appid ; 
 // API to Pull the information
 async function apiFetch() {
@@ -48,28 +46,3 @@ function  displayResults(weatherData) {
   });  
 }
 
-//  http://api.openweathermap.org/data/3.0/onecall/timemachine?lat=39.099724&lon=-94.578331&dt=1643803200&appid={API key}
-
-let url2 = 'https://api.openweathermap.org/data/3.0/onecall/timemachine?lat=';
-let appid2 = '&appid=cb4343a1424216be70f9ceed6101df98';
-url2 = url2 + lat + '&lon=' + lon + '&dt=' + dt + appid2;
-console.log(url2);
-async function apiFetch2() {
-  try {
-    const response = await fetch(url2);
-    if (response.ok) {
-      const data = await response.json();
-      console.log(data); // this is for testing the call
-      displayforecast(data) // displayResults(data);
-    } else {
-        throw Error(await response.text());
-    }
-  } catch (error) {
-      console.log(error);
-    }
-}
-apiFetch2()
-
-function  displayForecast(forecastData) {
-  console.log(forecastData);
-}
