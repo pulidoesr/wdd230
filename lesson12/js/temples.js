@@ -35,11 +35,19 @@ fetch(templeURL)
   function temple_selected () {
     var select = document.getElementById("temple_select");
     var temple_name = document.getElementById("temple_selected");
+    const address = document.querySelector("#temple_address");
+    const temple_link = document.querySelector("#temple_link");
+    
+    
     // Obtain Temple, Latitude and Longitude of the temple selected
     temple_name.textContent = temples[select.selectedIndex].Temple;
     lat = temples[select.selectedIndex].Latitude;
-    lon = temples[select.selectedIndex].Longitude;
-    const container = document.querySelector('#wforecast');
+    lon = temples[select.selectedIndex].Longitude;  
+    address.textContent = temples[select.selectedIndex].Address;
+    temple_link.textContent = temples[select.selectedIndex].Link;
+    temple_link.setAttribute('href', `${temples[select.selectedIndex].Link}`);
+    temple_link.setAttribute('target',"_blank");
+    var container = document.querySelector('#wforecast');
     if (container.hasChildNodes()) {
       removeAllChildNodes(container);
     }

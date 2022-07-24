@@ -248,8 +248,15 @@ section > p {
   border-style: solid;
   padding: .5rem;
 }
+.temple_select {
+  font-weight: bold;
+}
+#temple_selected {
+  font-weight: bold;
+}
 #wforecast {
   display: grid;
+  font-weight: bold;
 }
 /* ------- Contact Page --------*/
 
