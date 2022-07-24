@@ -66,11 +66,9 @@ let appid2 = '&exclude=minutely,hourly&appid=cb4343a1424216be70f9ceed6101df98';
 async function apiFetch2() {
   try {
     url3 = url2 + lat + '&lon=' + lon + '&units=imperial' + appid2;
-    console.log(url3);
     const response = await fetch(url3);
     if (response.ok) {
       const data = await response.json();
-      console.log(data);
       displayForecast(data) // displayResults(data);
     } else {
         throw Error(await response.text());
@@ -106,8 +104,6 @@ function  displayForecast(forecastData) {
       currentDayOfWeek = currentDate.getDay();
       iconcode = forecastData.daily[field].weather[0].icon + '.png'
       iconsrc = iconsrc + iconcode;
-      console.log(iconcode);
-      console.log(iconsrc);
       temp_day_name.textContent = week[currentDayOfWeek];
       temp_day_number.textContent = currentDayOfMonth;
       temp_day_day.textContent = forecastData.daily[field].feels_like.day;
