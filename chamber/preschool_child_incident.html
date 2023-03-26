@@ -20,7 +20,7 @@
       <picture>
         <img src="images/cca_logo.jpg" alt="Evansville CoC">
       </picture>
-    <h1>Presschool CIT225</h1>
+    <h1>Preschool CIT225</h1>
     </div>
   <div class="social">
 		<a href="https://facebook.com"><svg enable-background="new 0 0 32 32" height="32px" id="Layer_1" version="1.0" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -61,14 +61,26 @@
   <div class="date"></div>
   <aside></aside>
 </header>
-  <div class="menu">
-    <button id="grid">Grid</button>
-    <button id="list">List</button>
+  <main class="join">
+    
+    <div class="mform"> 
+      <h2>Child Incident</h2>
+      <form method="get" action="thanks.html">
+        <fieldset>
+            <legend>Your information</legend>
+          <label class="top"> First Name* <input type="text" name="fname" autofocus required> </label>
+          <label class="top"> Last Name* <input type="text" name="lname" required> </label>
+        </fieldset>
+        <fieldset>
+          <legend>Incident Description</legend>   
+              <label class="top">Provide Details</label>
+              <textarea name="" id="" cols="80" rows="10" ></textarea>
+      </fieldset>
+        <input type="Register" value="Create" class="submitBtn">
+        <input type="Update" value="Update" class="submitBtn">
+        <input type="Delete" value="Delete" class="submitBtn">
+    </form>   
   </div>
-<hr>
-  <main>
-    <div id="directory_list" class="grid">
-    </div>
   </main>
 <footer>
   <div class="foot_logo">
@@ -80,6 +92,5 @@
   <p> Last Modified: <span id="lastmodified"></span></p>
  </footer>
  <script src="js/scripts.js"></script>
- <script src="js/directory_ps.js"></script>
   </body>
 </html>
